@@ -1,1 +1,567 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  position: relative;
+  z-index: 10;
+}
+nav .logo {
+  width: 100%;
+  height: 115px;
+  display: flex;
+  align-items: center;
+}
+nav .logo img {
+  width: 100%;
+  height: 25px;
+  cursor: pointer;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+nav .rightside {
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+nav .rightside ul {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 35px;
+  list-style-type: none;
+}
+nav .rightside ul li {
+  list-style: none;
+  margin-right: 20px;
+}
+nav .rightside ul li a {
+  padding: 45px 3px;
+  position: relative;
+  font-size: 14px;
+  color: #1B1B1B;
+  text-decoration: none;
+  display: block;
+  font-family: "Montserrat", sans-serif;
+}
+nav .rightside ul li a::before {
+  width: 0%;
+  height: 1px;
+  position: absolute;
+  top: 65px;
+  left: 0px;
+  background-color: #000000;
+  content: "";
+  transition: 0.3s ease-in-out;
+}
+nav .rightside ul li a:hover::before {
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 65px;
+  left: 0px;
+  background-color: #000000;
+  content: "";
+}
+nav .rightside ul #search_click {
+  position: relative;
+  cursor: pointer;
+}
+nav .rightside ul #search_click:hover {
+  color: #F34F3F;
+}
+nav .rightside ul #search_click .search {
+  transition: 0.3s all;
+  overflow: hidden;
+  display: none;
+  width: 300px;
+  height: 0px;
+  position: absolute;
+  top: 67px;
+  left: -273px;
+  display: flex;
+}
+nav .rightside ul #search_click .search form {
+  width: 292px;
+  display: flex;
+  align-items: center;
+}
+nav .rightside ul #search_click .search form input {
+  width: 120%;
+  padding: 12px;
+  border: 1px solid transparent;
+  background-color: #fff;
+  outline: none;
+  font-size: 14px;
+}
+nav .rightside ul #search_click .search form button {
+  margin: 0 0 0 -5px;
+  padding: 12px;
+  border: 1px solid transparent;
+  background-color: #fff;
+  outline: none;
+  font-size: 14px;
+}
+nav .rightside ul #search_click .active {
+  overflow: hidden;
+  display: block;
+  height: 60px;
+}
+nav .rightside ul #home {
+  position: relative;
+}
+nav .rightside ul #home a::before {
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 70px;
+  left: 0px;
+  background-color: black;
+  content: "";
+}
+nav .rightside ul #home #home_hover {
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  width: 448%;
+  height: 0px;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  top: 113px;
+  left: -25px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+nav .rightside ul #home #home_hover ul {
+  width: 100%;
+  margin: 0px;
+  padding: 37px 10px 30px 20px;
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+  gap: 15px;
+  list-style-type: none;
+}
+nav .rightside ul #home #home_hover ul li a {
+  padding: 3px;
+  position: relative;
+  font-size: 14px;
+  color: #1B1B1B;
+  text-decoration: none;
+  display: block;
+}
+nav .rightside ul #home #home_hover ul li a::before {
+  width: 0%;
+  height: 1px;
+  position: absolute;
+  top: 22px;
+  left: 0px;
+  background-color: black;
+  content: "";
+  transition: 0.3s ease-in-out;
+}
+nav .rightside ul #home #home_hover ul li a:hover::before {
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 22px;
+  left: 0px;
+  background-color: black;
+  content: "";
+}
+nav .rightside ul #home:hover #home_hover {
+  height: 300px;
+  background-color: white;
+  overflow: hidden;
+  opacity: 1;
+}
+nav .rightside ul #pages {
+  position: relative;
+}
+nav .rightside ul #pages #home_hover {
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  width: 448%;
+  height: 0px;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  top: 113px;
+  left: -25px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+nav .rightside ul #pages #home_hover ul {
+  width: 100%;
+  margin: 0px;
+  padding: 37px 10px 30px 20px;
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+  gap: 15px;
+  list-style-type: none;
+}
+nav .rightside ul #pages #home_hover ul li {
+  cursor: pointer;
+}
+nav .rightside ul #pages #home_hover ul li a {
+  padding: 3px;
+  position: relative;
+  font-size: 14px;
+  color: #1B1B1B;
+  text-decoration: none;
+  display: block;
+}
+nav .rightside ul #pages #home_hover ul li a::before {
+  width: 0%;
+  height: 1px;
+  position: absolute;
+  top: 22px;
+  left: 0px;
+  background-color: black;
+  content: "";
+  transition: 0.3s ease-in-out;
+}
+nav .rightside ul #pages #home_hover ul li a:hover::before {
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 22px;
+  left: 0px;
+  background-color: black;
+  content: "";
+}
+nav .rightside ul #pages:hover #home_hover {
+  overflow: hidden;
+  opacity: 1;
+  height: 130px;
+  background-color: white;
+}
+nav .rightside ul #shop {
+  position: relative;
+}
+nav .rightside ul #shop #home_hover {
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  width: 1255px;
+  height: 0px;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  top: 113px;
+  left: -673px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+nav .rightside ul #shop #home_hover ul {
+  width: 100%;
+  margin: 0px;
+  padding: 37px 10px 30px 20px;
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+  gap: 15px;
+  list-style-type: none;
+}
+nav .rightside ul #shop #home_hover ul li {
+  line-height: 25px;
+  cursor: pointer;
+}
+nav .rightside ul #shop #home_hover ul li a {
+  padding: 3px;
+  position: relative;
+  font-size: 14px;
+  color: #1B1B1B;
+  text-decoration: none;
+  display: block;
+}
+nav .rightside ul #shop #home_hover ul li a::before {
+  width: 0%;
+  height: 1px;
+  position: absolute;
+  top: 22px;
+  left: 0px;
+  background-color: black;
+  content: "";
+  transition: 0.3s ease-in-out;
+}
+nav .rightside ul #shop #home_hover ul li:hover a::before {
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 22px;
+  left: 0px;
+  background-color: black;
+  content: "";
+}
+nav .rightside ul #shop:hover #home_hover {
+  overflow: hidden;
+  opacity: 1;
+  height: 450px;
+  background-color: white;
+}
+nav .rightside ul #shop p {
+  margin: 10px 0;
+  color: #000000;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+nav .rightside ul #portfolio {
+  position: relative;
+}
+nav .rightside ul #portfolio #home_hover {
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  width: 258%;
+  height: 0px;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  top: 113px;
+  left: -25px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+nav .rightside ul #portfolio #home_hover ul {
+  width: 100%;
+  margin: 0px;
+  padding: 37px 10px 30px 20px;
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+  gap: 15px;
+  list-style-type: none;
+}
+nav .rightside ul #portfolio #home_hover ul li {
+  cursor: pointer;
+}
+nav .rightside ul #portfolio #home_hover ul li a {
+  padding: 3px;
+  position: relative;
+  font-size: 14px;
+  color: #1B1B1B;
+  text-decoration: none;
+  display: block;
+}
+nav .rightside ul #portfolio #home_hover ul li a::before {
+  width: 0%;
+  height: 1px;
+  position: absolute;
+  top: 22px;
+  left: 0px;
+  background-color: black;
+  content: "";
+  transition: 0.3s ease-in-out;
+}
+nav .rightside ul #portfolio #home_hover ul li:hover a::before {
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 22px;
+  left: 0px;
+  background-color: black;
+  content: "";
+}
+nav .rightside ul #portfolio #home_hover ul #port_lay {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .rightside ul #portfolio #home_hover ul #port_lay .bi-chevron-right {
+  font-size: 12px;
+}
+nav .rightside ul #portfolio:hover #home_hover {
+  overflow: hidden;
+  opacity: 1;
+  height: 230px;
+  background-color: white;
+}
+nav .rightside ul #blog {
+  position: relative;
+}
+nav .rightside ul #blog #home_hover {
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  width: 420%;
+  height: 0px;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  top: 113px;
+  left: -25px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+nav .rightside ul #blog #home_hover ul {
+  width: 100%;
+  margin: 0px;
+  padding: 37px 10px 30px 20px;
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+  gap: 15px;
+  list-style-type: none;
+}
+nav .rightside ul #blog #home_hover ul li {
+  cursor: pointer;
+}
+nav .rightside ul #blog #home_hover ul li a {
+  padding: 3px;
+  position: relative;
+  font-size: 14px;
+  color: #1B1B1B;
+  text-decoration: none;
+  display: block;
+}
+nav .rightside ul #blog #home_hover ul li a::before {
+  width: 0%;
+  height: 1px;
+  position: absolute;
+  top: 22px;
+  left: 0px;
+  background-color: black;
+  content: "";
+  transition: 0.3s ease-in-out;
+}
+nav .rightside ul #blog #home_hover ul li:hover a::before {
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 22px;
+  left: 0px;
+  background-color: black;
+  content: "";
+}
+nav .rightside ul #blog #home_hover ul #port_lay {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .rightside ul #blog #home_hover ul #port_lay .bi-chevron-right {
+  font-size: 12px;
+}
+nav .rightside ul #blog:hover #home_hover {
+  overflow: hidden;
+  opacity: 1;
+  height: 130px;
+  background-color: white;
+}
+nav .rightside ul #elements {
+  position: relative;
+}
+nav .rightside ul #elements #home_hover {
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  width: 258%;
+  height: 0px;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  top: 113px;
+  left: -25px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+nav .rightside ul #elements #home_hover ul {
+  width: 100%;
+  margin: 0px;
+  padding: 37px 10px 30px 20px;
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+  gap: 15px;
+  list-style-type: none;
+}
+nav .rightside ul #elements #home_hover ul li {
+  cursor: pointer;
+}
+nav .rightside ul #elements #home_hover ul li a {
+  padding: 3px;
+  position: relative;
+  font-size: 14px;
+  color: #1B1B1B;
+  text-decoration: none;
+  display: block;
+}
+nav .rightside ul #elements #home_hover ul li a::before {
+  width: 0%;
+  height: 1px;
+  position: absolute;
+  top: 22px;
+  left: 0px;
+  background-color: black;
+  content: "";
+  transition: 0.3s ease-in-out;
+}
+nav .rightside ul #elements #home_hover ul li:hover a::before {
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 22px;
+  left: 0px;
+  background-color: black;
+  content: "";
+}
+nav .rightside ul #elements #home_hover ul #port_lay {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .rightside ul #elements #home_hover ul #port_lay .bi-chevron-left {
+  font-size: 12px;
+}
+nav .rightside ul #elements:hover #home_hover {
+  overflow: hidden;
+  opacity: 1;
+  height: 178px;
+  background-color: white;
+}
+nav .rightside #cart_add {
+  margin: 0px 0px 0px 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  font-weight: 500;
+}
+nav .rightside #cart_add p {
+  margin: 0px;
+  padding: 0px;
+  font-size: 14px;
+}
+
+body {
+  background-color: #6D6a6A !important;
+}/*# sourceMappingURL=style.css.map */
