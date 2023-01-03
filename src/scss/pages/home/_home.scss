@@ -91,6 +91,26 @@
       -webkit-align-items: center;
       align-items: center;
     }
+    .swiper-button-prev{
+        // left: 220px !important;
+        .bi{
+            font-size: 36px;
+              color: #b5b0b0;
+        }
+        &::after{
+            content: "";
+        }
+    }
+    .swiper-button-next{
+       
+        .bi{
+            font-size: 36px;
+            color: #b5b0b0;
+        }
+        &::after{
+            content: "";
+        }
+    }
   }
 }
 #filter {

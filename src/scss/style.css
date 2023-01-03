@@ -763,6 +763,20 @@ nav .navbar #cart_add .carts .cart_footer #black {
   justify-content: center;
   align-items: center;
 }
+#swiper_bundle .swiper .swiper-button-prev .bi {
+  font-size: 36px;
+  color: #b5b0b0;
+}
+#swiper_bundle .swiper .swiper-button-prev::after {
+  content: "";
+}
+#swiper_bundle .swiper .swiper-button-next .bi {
+  font-size: 36px;
+  color: #b5b0b0;
+}
+#swiper_bundle .swiper .swiper-button-next::after {
+  content: "";
+}
 
 #filter {
   /* Create three equal columns that floats next to each other */
