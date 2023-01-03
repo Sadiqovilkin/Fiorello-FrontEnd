@@ -23,13 +23,13 @@ nav .logo img {
   -o-object-fit: contain;
      object-fit: contain;
 }
-nav .rightside {
+nav .navbar {
   height: 100%;
   display: flex;
   justify-content: end;
   align-items: center;
 }
-nav .rightside ul {
+nav .navbar ul {
   margin: 0px;
   padding: 0px;
   display: flex;
@@ -38,11 +38,11 @@ nav .rightside ul {
   gap: 35px;
   list-style-type: none;
 }
-nav .rightside ul li {
+nav .navbar ul li {
   list-style: none;
   margin-right: 20px;
 }
-nav .rightside ul li a {
+nav .navbar ul li a {
   padding: 45px 3px;
   position: relative;
   font-size: 14px;
@@ -51,7 +51,7 @@ nav .rightside ul li a {
   display: block;
   font-family: "Montserrat", sans-serif;
 }
-nav .rightside ul li a::before {
+nav .navbar ul li a::before {
   width: 0%;
   height: 1px;
   position: absolute;
@@ -61,7 +61,7 @@ nav .rightside ul li a::before {
   content: "";
   transition: 0.3s ease-in-out;
 }
-nav .rightside ul li a:hover::before {
+nav .navbar ul li a:hover::before {
   width: 100%;
   height: 1px;
   position: absolute;
@@ -70,17 +70,17 @@ nav .rightside ul li a:hover::before {
   background-color: #000000;
   content: "";
 }
-nav .rightside ul #search_click {
+nav .navbar ul #search_click {
   position: relative;
   cursor: pointer;
 }
-nav .rightside ul #search_click:hover {
+nav .navbar ul #search_click:hover {
   color: #F34F3F;
 }
-nav .rightside ul #search_click .search {
+nav .navbar ul #search_click .search {
   transition: 0.3s all;
   overflow: hidden;
-  display: none;
+  opacity: 0;
   width: 300px;
   height: 0px;
   position: absolute;
@@ -88,12 +88,12 @@ nav .rightside ul #search_click .search {
   left: -273px;
   display: flex;
 }
-nav .rightside ul #search_click .search form {
+nav .navbar ul #search_click .search form {
   width: 292px;
   display: flex;
   align-items: center;
 }
-nav .rightside ul #search_click .search form input {
+nav .navbar ul #search_click .search form input {
   width: 120%;
   padding: 12px;
   border: 1px solid transparent;
@@ -101,7 +101,7 @@ nav .rightside ul #search_click .search form input {
   outline: none;
   font-size: 14px;
 }
-nav .rightside ul #search_click .search form button {
+nav .navbar ul #search_click .search form button {
   margin: 0 0 0 -5px;
   padding: 12px;
   border: 1px solid transparent;
@@ -109,15 +109,15 @@ nav .rightside ul #search_click .search form button {
   outline: none;
   font-size: 14px;
 }
-nav .rightside ul #search_click .active {
+nav .navbar ul #search_click .active {
   overflow: hidden;
-  display: block;
   height: 60px;
+  opacity: 1;
 }
-nav .rightside ul #home {
+nav .navbar ul #home {
   position: relative;
 }
-nav .rightside ul #home a::before {
+nav .navbar ul #home a::before {
   width: 100%;
   height: 1px;
   position: absolute;
@@ -126,7 +126,7 @@ nav .rightside ul #home a::before {
   background-color: black;
   content: "";
 }
-nav .rightside ul #home #home_hover {
+nav .navbar ul #home #home_hover {
   overflow: hidden;
   opacity: 0;
   transition: 0.3s ease-in-out;
@@ -142,7 +142,7 @@ nav .rightside ul #home #home_hover {
   align-items: center;
   list-style-type: none;
 }
-nav .rightside ul #home #home_hover ul {
+nav .navbar ul #home #home_hover ul {
   width: 100%;
   margin: 0px;
   padding: 37px 10px 30px 20px;
@@ -152,7 +152,7 @@ nav .rightside ul #home #home_hover ul {
   gap: 15px;
   list-style-type: none;
 }
-nav .rightside ul #home #home_hover ul li a {
+nav .navbar ul #home #home_hover ul li a {
   padding: 3px;
   position: relative;
   font-size: 14px;
@@ -160,7 +160,7 @@ nav .rightside ul #home #home_hover ul li a {
   text-decoration: none;
   display: block;
 }
-nav .rightside ul #home #home_hover ul li a::before {
+nav .navbar ul #home #home_hover ul li a::before {
   width: 0%;
   height: 1px;
   position: absolute;
@@ -170,7 +170,7 @@ nav .rightside ul #home #home_hover ul li a::before {
   content: "";
   transition: 0.3s ease-in-out;
 }
-nav .rightside ul #home #home_hover ul li a:hover::before {
+nav .navbar ul #home #home_hover ul li a:hover::before {
   width: 100%;
   height: 1px;
   position: absolute;
@@ -179,16 +179,16 @@ nav .rightside ul #home #home_hover ul li a:hover::before {
   background-color: black;
   content: "";
 }
-nav .rightside ul #home:hover #home_hover {
+nav .navbar ul #home:hover #home_hover {
   height: 300px;
   background-color: white;
   overflow: hidden;
   opacity: 1;
 }
-nav .rightside ul #pages {
+nav .navbar ul #pages {
   position: relative;
 }
-nav .rightside ul #pages #home_hover {
+nav .navbar ul #pages #home_hover {
   overflow: hidden;
   opacity: 0;
   transition: 0.3s ease-in-out;
@@ -204,7 +204,7 @@ nav .rightside ul #pages #home_hover {
   align-items: center;
   list-style-type: none;
 }
-nav .rightside ul #pages #home_hover ul {
+nav .navbar ul #pages #home_hover ul {
   width: 100%;
   margin: 0px;
   padding: 37px 10px 30px 20px;
@@ -214,10 +214,10 @@ nav .rightside ul #pages #home_hover ul {
   gap: 15px;
   list-style-type: none;
 }
-nav .rightside ul #pages #home_hover ul li {
+nav .navbar ul #pages #home_hover ul li {
   cursor: pointer;
 }
-nav .rightside ul #pages #home_hover ul li a {
+nav .navbar ul #pages #home_hover ul li a {
   padding: 3px;
   position: relative;
   font-size: 14px;
@@ -225,7 +225,7 @@ nav .rightside ul #pages #home_hover ul li a {
   text-decoration: none;
   display: block;
 }
-nav .rightside ul #pages #home_hover ul li a::before {
+nav .navbar ul #pages #home_hover ul li a::before {
   width: 0%;
   height: 1px;
   position: absolute;
@@ -235,7 +235,7 @@ nav .rightside ul #pages #home_hover ul li a::before {
   content: "";
   transition: 0.3s ease-in-out;
 }
-nav .rightside ul #pages #home_hover ul li a:hover::before {
+nav .navbar ul #pages #home_hover ul li a:hover::before {
   width: 100%;
   height: 1px;
   position: absolute;
@@ -244,16 +244,16 @@ nav .rightside ul #pages #home_hover ul li a:hover::before {
   background-color: black;
   content: "";
 }
-nav .rightside ul #pages:hover #home_hover {
+nav .navbar ul #pages:hover #home_hover {
   overflow: hidden;
   opacity: 1;
   height: 130px;
   background-color: white;
 }
-nav .rightside ul #shop {
+nav .navbar ul #shop {
   position: relative;
 }
-nav .rightside ul #shop #home_hover {
+nav .navbar ul #shop #home_hover {
   overflow: hidden;
   opacity: 0;
   transition: 0.3s ease-in-out;
@@ -269,7 +269,7 @@ nav .rightside ul #shop #home_hover {
   align-items: center;
   list-style-type: none;
 }
-nav .rightside ul #shop #home_hover ul {
+nav .navbar ul #shop #home_hover ul {
   width: 100%;
   margin: 0px;
   padding: 37px 10px 30px 20px;
@@ -279,11 +279,11 @@ nav .rightside ul #shop #home_hover ul {
   gap: 15px;
   list-style-type: none;
 }
-nav .rightside ul #shop #home_hover ul li {
+nav .navbar ul #shop #home_hover ul li {
   line-height: 25px;
   cursor: pointer;
 }
-nav .rightside ul #shop #home_hover ul li a {
+nav .navbar ul #shop #home_hover ul li a {
   padding: 3px;
   position: relative;
   font-size: 14px;
@@ -291,7 +291,7 @@ nav .rightside ul #shop #home_hover ul li a {
   text-decoration: none;
   display: block;
 }
-nav .rightside ul #shop #home_hover ul li a::before {
+nav .navbar ul #shop #home_hover ul li a::before {
   width: 0%;
   height: 1px;
   position: absolute;
@@ -301,7 +301,7 @@ nav .rightside ul #shop #home_hover ul li a::before {
   content: "";
   transition: 0.3s ease-in-out;
 }
-nav .rightside ul #shop #home_hover ul li:hover a::before {
+nav .navbar ul #shop #home_hover ul li:hover a::before {
   width: 100%;
   height: 1px;
   position: absolute;
@@ -310,23 +310,23 @@ nav .rightside ul #shop #home_hover ul li:hover a::before {
   background-color: black;
   content: "";
 }
-nav .rightside ul #shop:hover #home_hover {
+nav .navbar ul #shop:hover #home_hover {
   overflow: hidden;
   opacity: 1;
   height: 450px;
   background-color: white;
 }
-nav .rightside ul #shop p {
+nav .navbar ul #shop p {
   margin: 10px 0;
   color: #000000;
   text-align: center;
   font-size: 16px;
   font-weight: 600;
 }
-nav .rightside ul #portfolio {
+nav .navbar ul #portfolio {
   position: relative;
 }
-nav .rightside ul #portfolio #home_hover {
+nav .navbar ul #portfolio #home_hover {
   overflow: hidden;
   opacity: 0;
   transition: 0.3s ease-in-out;
@@ -342,7 +342,7 @@ nav .rightside ul #portfolio #home_hover {
   align-items: center;
   list-style-type: none;
 }
-nav .rightside ul #portfolio #home_hover ul {
+nav .navbar ul #portfolio #home_hover ul {
   width: 100%;
   margin: 0px;
   padding: 37px 10px 30px 20px;
@@ -352,10 +352,10 @@ nav .rightside ul #portfolio #home_hover ul {
   gap: 15px;
   list-style-type: none;
 }
-nav .rightside ul #portfolio #home_hover ul li {
+nav .navbar ul #portfolio #home_hover ul li {
   cursor: pointer;
 }
-nav .rightside ul #portfolio #home_hover ul li a {
+nav .navbar ul #portfolio #home_hover ul li a {
   padding: 3px;
   position: relative;
   font-size: 14px;
@@ -363,7 +363,7 @@ nav .rightside ul #portfolio #home_hover ul li a {
   text-decoration: none;
   display: block;
 }
-nav .rightside ul #portfolio #home_hover ul li a::before {
+nav .navbar ul #portfolio #home_hover ul li a::before {
   width: 0%;
   height: 1px;
   position: absolute;
@@ -373,7 +373,7 @@ nav .rightside ul #portfolio #home_hover ul li a::before {
   content: "";
   transition: 0.3s ease-in-out;
 }
-nav .rightside ul #portfolio #home_hover ul li:hover a::before {
+nav .navbar ul #portfolio #home_hover ul li:hover a::before {
   width: 100%;
   height: 1px;
   position: absolute;
@@ -382,26 +382,26 @@ nav .rightside ul #portfolio #home_hover ul li:hover a::before {
   background-color: black;
   content: "";
 }
-nav .rightside ul #portfolio #home_hover ul #port_lay {
+nav .navbar ul #portfolio #home_hover ul #port_lay {
   width: 100%;
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-nav .rightside ul #portfolio #home_hover ul #port_lay .bi-chevron-right {
+nav .navbar ul #portfolio #home_hover ul #port_lay .bi-chevron-right {
   font-size: 12px;
 }
-nav .rightside ul #portfolio:hover #home_hover {
+nav .navbar ul #portfolio:hover #home_hover {
   overflow: hidden;
   opacity: 1;
   height: 230px;
   background-color: white;
 }
-nav .rightside ul #blog {
+nav .navbar ul #blog {
   position: relative;
 }
-nav .rightside ul #blog #home_hover {
+nav .navbar ul #blog #home_hover {
   overflow: hidden;
   opacity: 0;
   transition: 0.3s ease-in-out;
@@ -417,7 +417,7 @@ nav .rightside ul #blog #home_hover {
   align-items: center;
   list-style-type: none;
 }
-nav .rightside ul #blog #home_hover ul {
+nav .navbar ul #blog #home_hover ul {
   width: 100%;
   margin: 0px;
   padding: 37px 10px 30px 20px;
@@ -427,10 +427,10 @@ nav .rightside ul #blog #home_hover ul {
   gap: 15px;
   list-style-type: none;
 }
-nav .rightside ul #blog #home_hover ul li {
+nav .navbar ul #blog #home_hover ul li {
   cursor: pointer;
 }
-nav .rightside ul #blog #home_hover ul li a {
+nav .navbar ul #blog #home_hover ul li a {
   padding: 3px;
   position: relative;
   font-size: 14px;
@@ -438,7 +438,7 @@ nav .rightside ul #blog #home_hover ul li a {
   text-decoration: none;
   display: block;
 }
-nav .rightside ul #blog #home_hover ul li a::before {
+nav .navbar ul #blog #home_hover ul li a::before {
   width: 0%;
   height: 1px;
   position: absolute;
@@ -448,7 +448,7 @@ nav .rightside ul #blog #home_hover ul li a::before {
   content: "";
   transition: 0.3s ease-in-out;
 }
-nav .rightside ul #blog #home_hover ul li:hover a::before {
+nav .navbar ul #blog #home_hover ul li:hover a::before {
   width: 100%;
   height: 1px;
   position: absolute;
@@ -457,26 +457,26 @@ nav .rightside ul #blog #home_hover ul li:hover a::before {
   background-color: black;
   content: "";
 }
-nav .rightside ul #blog #home_hover ul #port_lay {
+nav .navbar ul #blog #home_hover ul #port_lay {
   width: 100%;
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-nav .rightside ul #blog #home_hover ul #port_lay .bi-chevron-right {
+nav .navbar ul #blog #home_hover ul #port_lay .bi-chevron-right {
   font-size: 12px;
 }
-nav .rightside ul #blog:hover #home_hover {
+nav .navbar ul #blog:hover #home_hover {
   overflow: hidden;
   opacity: 1;
   height: 130px;
   background-color: white;
 }
-nav .rightside ul #elements {
+nav .navbar ul #elements {
   position: relative;
 }
-nav .rightside ul #elements #home_hover {
+nav .navbar ul #elements #home_hover {
   overflow: hidden;
   opacity: 0;
   transition: 0.3s ease-in-out;
@@ -492,7 +492,7 @@ nav .rightside ul #elements #home_hover {
   align-items: center;
   list-style-type: none;
 }
-nav .rightside ul #elements #home_hover ul {
+nav .navbar ul #elements #home_hover ul {
   width: 100%;
   margin: 0px;
   padding: 37px 10px 30px 20px;
@@ -502,10 +502,10 @@ nav .rightside ul #elements #home_hover ul {
   gap: 15px;
   list-style-type: none;
 }
-nav .rightside ul #elements #home_hover ul li {
+nav .navbar ul #elements #home_hover ul li {
   cursor: pointer;
 }
-nav .rightside ul #elements #home_hover ul li a {
+nav .navbar ul #elements #home_hover ul li a {
   padding: 3px;
   position: relative;
   font-size: 14px;
@@ -513,7 +513,7 @@ nav .rightside ul #elements #home_hover ul li a {
   text-decoration: none;
   display: block;
 }
-nav .rightside ul #elements #home_hover ul li a::before {
+nav .navbar ul #elements #home_hover ul li a::before {
   width: 0%;
   height: 1px;
   position: absolute;
@@ -523,7 +523,7 @@ nav .rightside ul #elements #home_hover ul li a::before {
   content: "";
   transition: 0.3s ease-in-out;
 }
-nav .rightside ul #elements #home_hover ul li:hover a::before {
+nav .navbar ul #elements #home_hover ul li:hover a::before {
   width: 100%;
   height: 1px;
   position: absolute;
@@ -532,23 +532,23 @@ nav .rightside ul #elements #home_hover ul li:hover a::before {
   background-color: black;
   content: "";
 }
-nav .rightside ul #elements #home_hover ul #port_lay {
+nav .navbar ul #elements #home_hover ul #port_lay {
   width: 100%;
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-nav .rightside ul #elements #home_hover ul #port_lay .bi-chevron-left {
+nav .navbar ul #elements #home_hover ul #port_lay .bi-chevron-left {
   font-size: 12px;
 }
-nav .rightside ul #elements:hover #home_hover {
+nav .navbar ul #elements:hover #home_hover {
   overflow: hidden;
   opacity: 1;
   height: 178px;
   background-color: white;
 }
-nav .rightside #cart_add {
+nav .navbar #cart_add {
   margin: 0px 0px 0px 20px;
   cursor: pointer;
   display: flex;
@@ -556,12 +556,115 @@ nav .rightside #cart_add {
   gap: 13px;
   font-weight: 500;
 }
-nav .rightside #cart_add p {
+nav .navbar #cart_add p {
   margin: 0px;
   padding: 0px;
   font-size: 14px;
 }
 
-body {
-  background-color: #6D6a6A !important;
+#swiper_bundle {
+  position: relative;
+  background-color: #f3f3f3;
+  padding: 30px 0;
+}
+#swiper_bundle .left_side {
+  position: relative;
+  z-index: 1;
+  text-align: start;
+}
+#swiper_bundle .left_side .header {
+  gap: 15px;
+  width: 65%;
+  color: #000000;
+  text-align: inherit;
+  font-size: 41px;
+}
+#swiper_bundle .left_side .header h3 {
+  font-weight: 400;
+  font-family: "Playfair Display", serif;
+  margin: 0;
+  display: inline;
+  text-align: inherit;
+  font-size: 41px;
+}
+#swiper_bundle .left_side .header #flowers {
+  font-weight: 400;
+  color: #FF0000;
+  text-align: inherit;
+  font-size: 41px;
+}
+#swiper_bundle .left_side #title {
+  width: 80%;
+  margin: 20px 0;
+  color: #6D6a6A;
+  line-height: 29px;
+  font-family: "Lora", serif;
+}
+#swiper_bundle .rightside_img {
+  width: 100%;
+}
+#swiper_bundle .rightside_img img {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 80% 100%;
+     object-position: 80% 100%;
+  -webkit-animation-name: sliderscale;
+          animation-name: sliderscale;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+@-webkit-keyframes sliderscale {
+  0% {
+    transform: scale(1.4);
+  }
+  20% {
+    transform: scale(1.06);
+  }
+  40% {
+    transform: scale(1.08);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  80% {
+    transform: scale(1.12);
+  }
+  100% {
+    transform: scale(1.15);
+  }
+}
+@keyframes sliderscale {
+  0% {
+    transform: scale(1.4);
+  }
+  20% {
+    transform: scale(1.06);
+  }
+  40% {
+    transform: scale(1.08);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  80% {
+    transform: scale(1.12);
+  }
+  100% {
+    transform: scale(1.15);
+  }
+}
+#swiper_bundle .swiper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+#swiper_bundle .swiper .swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */

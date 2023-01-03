@@ -7,7 +7,7 @@ nav {
             @include _main($height:25px , $width:100% , $object_f:contain , $cursor:pointer);
         }
     }
-    .rightside{
+    .navbar{
         @include _main( $display:flex , $align_it:center , $height:100% , $just_content:end);
    ul{
         @include _main( $display:flex , $align_it:center , $margin:0px , $padding:0px);
@@ -35,6 +35,7 @@ nav {
                 }      
             }      
         }
+        
         #search_click{ 
             position: relative;
             cursor: pointer;
@@ -44,7 +45,7 @@ nav {
             .search{    
                 transition: .3s all;
                  overflow: hidden;
-                display: none;
+                opacity: 0;
                 @include _main($position:absolute , $height:0px , $top:67px , $left:-273px , $display:flex , $width:300px);
                 form{
                     @include _main($display:flex , $align_it:center , $width:292px);
@@ -62,8 +63,8 @@ nav {
             }
        .active {
                     overflow: hidden;
-                    display: block;
                     height: 60px;
+                    opacity: 1;
                 }
         }   
         #home{
