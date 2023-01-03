@@ -12,7 +12,7 @@ nav {
    ul{
         @include _main( $display:flex , $align_it:center , $margin:0px , $padding:0px);
         flex-direction: row;
-        gap: 35px;
+        gap: 25px;
         list-style-type: none;
         li{
             list-style: none;
@@ -339,13 +339,140 @@ nav {
             @include _main($height:178px , $back-color:white);
         }
     }
-    }    #cart_add{
+    }    
+    #cart_add{
         @include _main( $display:flex , $align_it:center , $cursor:pointer , $margin:0px 0px 0px 20px );
         gap: 13px;
          font-weight: 500;  
+         position: relative;
         p{
             @include _main($margin:0px , $padding:0px , $font_s:14px);
         }
+        .total_item{
+            position: absolute;
+            top: -1px;
+            left: 11px;
+            width: 13px;
+            height: 13px;
+            background-color: $orange-bgcolor;
+            font-size: 8px;
+            color: #fff;
+            font-weight: 600;
+            line-height: 1.5em;
+            border-radius: 50%;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+
+        }
+        &:hover{
+            .carts{
+                display: block;
+            }
+        }
+        .carts {
+
+            background-color: $white-color;
+            z-index: 999;
+            position: absolute;
+            top: 75px;
+            left: -80px;
+            display: none;
+            flex-direction: column;
+            width: 250px;
+            padding: 10px;
+            .cart-item{
+                width: 100%;
+               margin: 5px 0;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+               
+                .item-info{
+                  
+                    width: 100%;
+                    display: flex;
+                   .item_img{
+                    width: 30%;
+                    img{
+                        width: 50px;
+                        height: 70px;
+                        object-fit: cover;
+                    }
+                   }
+                   .item_desc{
+                    h4{
+                        font-size: 12px;
+                        font-family: $font-Mont;
+                        color: $black-txtcolor;
+                    }
+                    .unit-price{
+                        span{
+                            font-size: 12px;
+                            font-family: $font-Mont;
+                            color: $lightgray-txtcolor;
+                        }
+                    }
+                   }
+                   
+                }
+            
+                // .units{
+                //     width: 50%;
+                //     display: flex;
+                //     flex-direction: row;
+                //     align-items: center;
+                //     float: right;
+                //     .minus{
+                //         background-color: #f4f4f4;
+                //     }
+                //     .number{
+                       
+                //         padding: 5px;
+                //     }
+                //     .plus{
+                //         background-color: #f4f4f4;
+                //     }
+                // }
+            }
+            .subtotal {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px 0px;
+                background-color: white;
+                font-size: 14px;
+                width: 100%;
+                color: $black-second-txtcolor;
+              }
+            .cart_footer {
+              width: 100%;
+              display: flex;
+              justify-content: space-evenly;
+
+              button{
+                width: 45%;
+                height: 40px;
+                border: none;
+    line-height: 40px;
+    padding: 0 18px;
+    font-size: 9px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #fff;
+    background-color: $orange-bgcolor;
+    text-align: center;
+    cursor: pointer;
+              }
+              #black{
+                background-color: $black-color;
+              }
+
+            
+            }
+          }
     }
 }
 
