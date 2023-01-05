@@ -6,6 +6,7 @@ if (bi_search) {
     search.classList.toggle('active')
   })
 }
+// First swiper
 var swiper = new Swiper(".secswiper", {
     slidesPerView: 1,
     spaceBetween: 30,
@@ -15,8 +16,8 @@ var swiper = new Swiper(".secswiper", {
         disableOnInteraction: false,
       },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".bi-arrow-right",
+      prevEl: ".bi-arrow-left",
     },
   });
   
@@ -283,4 +284,19 @@ const CardData=[
         Navbar.classList.remove("navbaractive")
       }
     })
+
+    // blog swiper 
+    var swiper = new Swiper(".blogger_swiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".bi-arrow-right",
+        prevEl: ".bi-arrow-left",
+      },
+    });
     

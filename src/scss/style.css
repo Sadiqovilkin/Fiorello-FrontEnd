@@ -965,4 +965,221 @@
 #video_modal .modal-dialog .modal-body iframe {
   width: 100%;
   height: 100%;
+}
+
+#expert {
+  margin: 100px 0;
+}
+#expert h3 {
+  font-family: "Playfair Display", serif;
+  color: #1B1B1B;
+  font-size: 35px;
+}
+#expert #text_p {
+  font-family: "Lora", serif;
+  width: 46%;
+  margin: 20px auto 35px auto;
+  font-size: 16px;
+  color: #AFAFAF;
+}
+#expert .cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0;
+  flex-direction: column;
+}
+#expert .cart .cart_img {
+  width: 222px;
+  height: 222px;
+  margin: 0 0 22px 0;
+}
+#expert .cart .cart_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#expert .cart span {
+  font-size: 14px;
+  color: #1B1B1B;
+  font-family: "Montserrat", sans-serif;
+}
+#expert .cart p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  margin: 10px 0;
+  color: #AFAFAF;
+}
+
+#fixed_search {
+  margin-top: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Playfair Display", serif;
+  padding: 185px 0;
+  background-attachment: fixed;
+}
+#fixed_search .search_div h3 {
+  font-size: 30px;
+  color: #fff;
+}
+#fixed_search .search_div form {
+  margin-top: 29px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#fixed_search .search_div form input {
+  outline: none;
+  border: 1px solid transparent;
+  background-color: #fff;
+  font-size: 14px;
+  padding: 22px;
+  width: 37%;
+}
+#fixed_search .search_div form input::-moz-placeholder {
+  font-size: 12px;
+  color: #AFAFAF;
+}
+#fixed_search .search_div form input:-ms-input-placeholder {
+  font-size: 12px;
+  color: #AFAFAF;
+}
+#fixed_search .search_div form input::placeholder {
+  font-size: 12px;
+  color: #AFAFAF;
+}
+#fixed_search .search_div form button {
+  font-size: 14px;
+  width: 13%;
+  padding: 22px;
+  outline: none;
+  border: 1px solid transparent;
+  color: white;
+  background-color: #F34F3F;
+}
+
+#blog_cards {
+  padding: 100px 0;
+  background-color: #f7f7f7;
+  font-family: "Playfair Display", serif;
+}
+#blog_cards .header h3 {
+  font-size: 35px;
+}
+#blog_cards .header #text_p {
+  width: 46%;
+  margin: 25px auto 55px auto;
+  font-size: 16px;
+  color: #AFAFAF;
+}
+#blog_cards .cart_blog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#blog_cards .cart_blog .cart_img {
+  width: 100%;
+  height: 268px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  transform: scale(1);
+}
+#blog_cards .cart_blog .cart_img img {
+  transition: 0.2s ease-in-out;
+  width: 100%;
+  height: 268px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#blog_cards .cart_blog .cart_img .time_box {
+  transition: 0.3s ease-in-out;
+  padding: 9px 19px;
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  color: #000000;
+  cursor: pointer;
+  background-color: #fff;
+  font-size: 15px;
+}
+#blog_cards .cart_blog .cart_img .time_box:hover {
+  color: #FF0000;
+}
+#blog_cards .cart_blog .cart_img:hover img {
+  transform: scale(1.04);
+}
+#blog_cards .cart_blog h3 {
+  font-size: 23px;
+  margin: 32px 0 15px 0;
+  font-weight: 300;
+}
+#blog_cards .cart_blog p {
+  font-size: 14px;
+  color: #AFAFAF;
+  text-align: center;
+}
+
+#blog_swiper {
+  margin-top: 130px;
+}
+#blog_swiper .swiper-button-prev {
+  top: 100px !important;
+  left: 190px !important;
+}
+#blog_swiper .swiper-button-prev .bi {
+  font-size: 36px;
+  color: #AFAFAF;
+}
+#blog_swiper .swiper-button-prev::after {
+  content: "";
+}
+#blog_swiper .swiper-button-next {
+  top: 100px !important;
+  right: 190px !important;
+}
+#blog_swiper .swiper-button-next .bi {
+  font-size: 36px;
+  color: #AFAFAF;
+}
+#blog_swiper .swiper-button-next::after {
+  content: "";
+}
+#blog_swiper .cart_swiper {
+  max-width: 600px;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#blog_swiper .cart_swiper img {
+  width: 87px;
+  height: 87px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#blog_swiper .cart_swiper p {
+  font-size: 21px;
+  font-style: italic;
+  color: #6D6a6A;
+  font-family: "Lora", serif;
+  margin: 15px 0 30px 0;
+  line-height: 1.5em;
+}
+#blog_swiper .cart_swiper span {
+  font-size: 12px;
+  line-height: 2em;
+  font-weight: 500;
+  color: #000000;
+  margin: 0px 0 10px 0;
+  font-family: "Montserrat", sans-serif;
+}
+#blog_swiper .cart_swiper #florist {
+  color: #AFAFAF;
 }/*# sourceMappingURL=style.css.map */
