@@ -1,6 +1,8 @@
-nav {
-    position: relative;
+#nav1 {
+    transition: .5s ease-in-out;
     z-index: 10;
+    position: relative;
+    background-color: #fff;
     .logo{
         @include _main($height:115px , $width:100% , $display:flex , $align_it:center);
         img{
@@ -476,5 +478,12 @@ nav {
     }
 }
 
+}
+.navbaractive{
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: .5s ease-in-out;
 }
 

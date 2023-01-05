@@ -6,30 +6,32 @@
   padding: 0;
 }
 
-nav {
-  position: relative;
+#nav1 {
+  transition: 0.5s ease-in-out;
   z-index: 10;
+  position: relative;
+  background-color: #fff;
 }
-nav .logo {
+#nav1 .logo {
   width: 100%;
   height: 115px;
   display: flex;
   align-items: center;
 }
-nav .logo img {
+#nav1 .logo img {
   width: 100%;
   height: 25px;
   cursor: pointer;
   -o-object-fit: contain;
      object-fit: contain;
 }
-nav .navbar {
+#nav1 .navbar {
   height: 100%;
   display: flex;
   justify-content: end;
   align-items: center;
 }
-nav .navbar ul {
+#nav1 .navbar ul {
   margin: 0px;
   padding: 0px;
   display: flex;
@@ -38,11 +40,11 @@ nav .navbar ul {
   gap: 25px;
   list-style-type: none;
 }
-nav .navbar ul li {
+#nav1 .navbar ul li {
   list-style: none;
   margin-right: 20px;
 }
-nav .navbar ul li a {
+#nav1 .navbar ul li a {
   padding: 45px 3px;
   position: relative;
   font-size: 14px;
@@ -51,7 +53,7 @@ nav .navbar ul li a {
   display: block;
   font-family: "Montserrat", sans-serif;
 }
-nav .navbar ul li a::before {
+#nav1 .navbar ul li a::before {
   width: 0%;
   height: 1px;
   position: absolute;
@@ -61,7 +63,7 @@ nav .navbar ul li a::before {
   content: "";
   transition: 0.3s ease-in-out;
 }
-nav .navbar ul li a:hover::before {
+#nav1 .navbar ul li a:hover::before {
   width: 100%;
   height: 1px;
   position: absolute;
@@ -70,14 +72,14 @@ nav .navbar ul li a:hover::before {
   background-color: #000000;
   content: "";
 }
-nav .navbar ul #search_click {
+#nav1 .navbar ul #search_click {
   position: relative;
   cursor: pointer;
 }
-nav .navbar ul #search_click:hover {
+#nav1 .navbar ul #search_click:hover {
   color: #F34F3F;
 }
-nav .navbar ul #search_click .search {
+#nav1 .navbar ul #search_click .search {
   transition: 0.3s all;
   overflow: hidden;
   opacity: 0;
@@ -88,12 +90,12 @@ nav .navbar ul #search_click .search {
   left: -273px;
   display: flex;
 }
-nav .navbar ul #search_click .search form {
+#nav1 .navbar ul #search_click .search form {
   width: 292px;
   display: flex;
   align-items: center;
 }
-nav .navbar ul #search_click .search form input {
+#nav1 .navbar ul #search_click .search form input {
   width: 120%;
   padding: 12px;
   border: 1px solid transparent;
@@ -101,7 +103,7 @@ nav .navbar ul #search_click .search form input {
   outline: none;
   font-size: 14px;
 }
-nav .navbar ul #search_click .search form button {
+#nav1 .navbar ul #search_click .search form button {
   margin: 0 0 0 -5px;
   padding: 12px;
   border: 1px solid transparent;
@@ -109,15 +111,15 @@ nav .navbar ul #search_click .search form button {
   outline: none;
   font-size: 14px;
 }
-nav .navbar ul #search_click .active {
+#nav1 .navbar ul #search_click .active {
   overflow: hidden;
   height: 60px;
   opacity: 1;
 }
-nav .navbar ul #home {
+#nav1 .navbar ul #home {
   position: relative;
 }
-nav .navbar ul #home a::before {
+#nav1 .navbar ul #home a::before {
   width: 100%;
   height: 1px;
   position: absolute;
@@ -126,7 +128,7 @@ nav .navbar ul #home a::before {
   background-color: black;
   content: "";
 }
-nav .navbar ul #home #home_hover {
+#nav1 .navbar ul #home #home_hover {
   overflow: hidden;
   opacity: 0;
   transition: 0.3s ease-in-out;
@@ -142,7 +144,7 @@ nav .navbar ul #home #home_hover {
   align-items: center;
   list-style-type: none;
 }
-nav .navbar ul #home #home_hover ul {
+#nav1 .navbar ul #home #home_hover ul {
   width: 100%;
   margin: 0px;
   padding: 37px 10px 30px 20px;
@@ -152,7 +154,7 @@ nav .navbar ul #home #home_hover ul {
   gap: 15px;
   list-style-type: none;
 }
-nav .navbar ul #home #home_hover ul li a {
+#nav1 .navbar ul #home #home_hover ul li a {
   padding: 3px;
   position: relative;
   font-size: 14px;
@@ -160,7 +162,7 @@ nav .navbar ul #home #home_hover ul li a {
   text-decoration: none;
   display: block;
 }
-nav .navbar ul #home #home_hover ul li a::before {
+#nav1 .navbar ul #home #home_hover ul li a::before {
   width: 0%;
   height: 1px;
   position: absolute;
@@ -170,7 +172,7 @@ nav .navbar ul #home #home_hover ul li a::before {
   content: "";
   transition: 0.3s ease-in-out;
 }
-nav .navbar ul #home #home_hover ul li a:hover::before {
+#nav1 .navbar ul #home #home_hover ul li a:hover::before {
   width: 100%;
   height: 1px;
   position: absolute;
@@ -179,16 +181,16 @@ nav .navbar ul #home #home_hover ul li a:hover::before {
   background-color: black;
   content: "";
 }
-nav .navbar ul #home:hover #home_hover {
+#nav1 .navbar ul #home:hover #home_hover {
   height: 300px;
   background-color: white;
   overflow: hidden;
   opacity: 1;
 }
-nav .navbar ul #pages {
+#nav1 .navbar ul #pages {
   position: relative;
 }
-nav .navbar ul #pages #home_hover {
+#nav1 .navbar ul #pages #home_hover {
   overflow: hidden;
   opacity: 0;
   transition: 0.3s ease-in-out;
@@ -204,7 +206,7 @@ nav .navbar ul #pages #home_hover {
   align-items: center;
   list-style-type: none;
 }
-nav .navbar ul #pages #home_hover ul {
+#nav1 .navbar ul #pages #home_hover ul {
   width: 100%;
   margin: 0px;
   padding: 37px 10px 30px 20px;
@@ -214,10 +216,10 @@ nav .navbar ul #pages #home_hover ul {
   gap: 15px;
   list-style-type: none;
 }
-nav .navbar ul #pages #home_hover ul li {
+#nav1 .navbar ul #pages #home_hover ul li {
   cursor: pointer;
 }
-nav .navbar ul #pages #home_hover ul li a {
+#nav1 .navbar ul #pages #home_hover ul li a {
   padding: 3px;
   position: relative;
   font-size: 14px;
@@ -225,7 +227,7 @@ nav .navbar ul #pages #home_hover ul li a {
   text-decoration: none;
   display: block;
 }
-nav .navbar ul #pages #home_hover ul li a::before {
+#nav1 .navbar ul #pages #home_hover ul li a::before {
   width: 0%;
   height: 1px;
   position: absolute;
@@ -235,7 +237,7 @@ nav .navbar ul #pages #home_hover ul li a::before {
   content: "";
   transition: 0.3s ease-in-out;
 }
-nav .navbar ul #pages #home_hover ul li a:hover::before {
+#nav1 .navbar ul #pages #home_hover ul li a:hover::before {
   width: 100%;
   height: 1px;
   position: absolute;
@@ -244,16 +246,16 @@ nav .navbar ul #pages #home_hover ul li a:hover::before {
   background-color: black;
   content: "";
 }
-nav .navbar ul #pages:hover #home_hover {
+#nav1 .navbar ul #pages:hover #home_hover {
   overflow: hidden;
   opacity: 1;
   height: 130px;
   background-color: white;
 }
-nav .navbar ul #shop {
+#nav1 .navbar ul #shop {
   position: relative;
 }
-nav .navbar ul #shop #home_hover {
+#nav1 .navbar ul #shop #home_hover {
   overflow: hidden;
   opacity: 0;
   transition: 0.3s ease-in-out;
@@ -269,7 +271,7 @@ nav .navbar ul #shop #home_hover {
   align-items: center;
   list-style-type: none;
 }
-nav .navbar ul #shop #home_hover ul {
+#nav1 .navbar ul #shop #home_hover ul {
   width: 100%;
   margin: 0px;
   padding: 37px 10px 30px 20px;
@@ -279,11 +281,11 @@ nav .navbar ul #shop #home_hover ul {
   gap: 15px;
   list-style-type: none;
 }
-nav .navbar ul #shop #home_hover ul li {
+#nav1 .navbar ul #shop #home_hover ul li {
   line-height: 25px;
   cursor: pointer;
 }
-nav .navbar ul #shop #home_hover ul li a {
+#nav1 .navbar ul #shop #home_hover ul li a {
   padding: 3px;
   position: relative;
   font-size: 14px;
@@ -291,7 +293,7 @@ nav .navbar ul #shop #home_hover ul li a {
   text-decoration: none;
   display: block;
 }
-nav .navbar ul #shop #home_hover ul li a::before {
+#nav1 .navbar ul #shop #home_hover ul li a::before {
   width: 0%;
   height: 1px;
   position: absolute;
@@ -301,7 +303,7 @@ nav .navbar ul #shop #home_hover ul li a::before {
   content: "";
   transition: 0.3s ease-in-out;
 }
-nav .navbar ul #shop #home_hover ul li:hover a::before {
+#nav1 .navbar ul #shop #home_hover ul li:hover a::before {
   width: 100%;
   height: 1px;
   position: absolute;
@@ -310,23 +312,23 @@ nav .navbar ul #shop #home_hover ul li:hover a::before {
   background-color: black;
   content: "";
 }
-nav .navbar ul #shop:hover #home_hover {
+#nav1 .navbar ul #shop:hover #home_hover {
   overflow: hidden;
   opacity: 1;
   height: 450px;
   background-color: white;
 }
-nav .navbar ul #shop p {
+#nav1 .navbar ul #shop p {
   margin: 10px 0;
   color: #000000;
   text-align: center;
   font-size: 16px;
   font-weight: 600;
 }
-nav .navbar ul #portfolio {
+#nav1 .navbar ul #portfolio {
   position: relative;
 }
-nav .navbar ul #portfolio #home_hover {
+#nav1 .navbar ul #portfolio #home_hover {
   overflow: hidden;
   opacity: 0;
   transition: 0.3s ease-in-out;
@@ -342,7 +344,7 @@ nav .navbar ul #portfolio #home_hover {
   align-items: center;
   list-style-type: none;
 }
-nav .navbar ul #portfolio #home_hover ul {
+#nav1 .navbar ul #portfolio #home_hover ul {
   width: 100%;
   margin: 0px;
   padding: 37px 10px 30px 20px;
@@ -352,10 +354,10 @@ nav .navbar ul #portfolio #home_hover ul {
   gap: 15px;
   list-style-type: none;
 }
-nav .navbar ul #portfolio #home_hover ul li {
+#nav1 .navbar ul #portfolio #home_hover ul li {
   cursor: pointer;
 }
-nav .navbar ul #portfolio #home_hover ul li a {
+#nav1 .navbar ul #portfolio #home_hover ul li a {
   padding: 3px;
   position: relative;
   font-size: 14px;
@@ -363,7 +365,7 @@ nav .navbar ul #portfolio #home_hover ul li a {
   text-decoration: none;
   display: block;
 }
-nav .navbar ul #portfolio #home_hover ul li a::before {
+#nav1 .navbar ul #portfolio #home_hover ul li a::before {
   width: 0%;
   height: 1px;
   position: absolute;
@@ -373,7 +375,7 @@ nav .navbar ul #portfolio #home_hover ul li a::before {
   content: "";
   transition: 0.3s ease-in-out;
 }
-nav .navbar ul #portfolio #home_hover ul li:hover a::before {
+#nav1 .navbar ul #portfolio #home_hover ul li:hover a::before {
   width: 100%;
   height: 1px;
   position: absolute;
@@ -382,26 +384,26 @@ nav .navbar ul #portfolio #home_hover ul li:hover a::before {
   background-color: black;
   content: "";
 }
-nav .navbar ul #portfolio #home_hover ul #port_lay {
+#nav1 .navbar ul #portfolio #home_hover ul #port_lay {
   width: 100%;
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-nav .navbar ul #portfolio #home_hover ul #port_lay .bi-chevron-right {
+#nav1 .navbar ul #portfolio #home_hover ul #port_lay .bi-chevron-right {
   font-size: 12px;
 }
-nav .navbar ul #portfolio:hover #home_hover {
+#nav1 .navbar ul #portfolio:hover #home_hover {
   overflow: hidden;
   opacity: 1;
   height: 230px;
   background-color: white;
 }
-nav .navbar ul #blog {
+#nav1 .navbar ul #blog {
   position: relative;
 }
-nav .navbar ul #blog #home_hover {
+#nav1 .navbar ul #blog #home_hover {
   overflow: hidden;
   opacity: 0;
   transition: 0.3s ease-in-out;
@@ -417,7 +419,7 @@ nav .navbar ul #blog #home_hover {
   align-items: center;
   list-style-type: none;
 }
-nav .navbar ul #blog #home_hover ul {
+#nav1 .navbar ul #blog #home_hover ul {
   width: 100%;
   margin: 0px;
   padding: 37px 10px 30px 20px;
@@ -427,10 +429,10 @@ nav .navbar ul #blog #home_hover ul {
   gap: 15px;
   list-style-type: none;
 }
-nav .navbar ul #blog #home_hover ul li {
+#nav1 .navbar ul #blog #home_hover ul li {
   cursor: pointer;
 }
-nav .navbar ul #blog #home_hover ul li a {
+#nav1 .navbar ul #blog #home_hover ul li a {
   padding: 3px;
   position: relative;
   font-size: 14px;
@@ -438,7 +440,7 @@ nav .navbar ul #blog #home_hover ul li a {
   text-decoration: none;
   display: block;
 }
-nav .navbar ul #blog #home_hover ul li a::before {
+#nav1 .navbar ul #blog #home_hover ul li a::before {
   width: 0%;
   height: 1px;
   position: absolute;
@@ -448,7 +450,7 @@ nav .navbar ul #blog #home_hover ul li a::before {
   content: "";
   transition: 0.3s ease-in-out;
 }
-nav .navbar ul #blog #home_hover ul li:hover a::before {
+#nav1 .navbar ul #blog #home_hover ul li:hover a::before {
   width: 100%;
   height: 1px;
   position: absolute;
@@ -457,26 +459,26 @@ nav .navbar ul #blog #home_hover ul li:hover a::before {
   background-color: black;
   content: "";
 }
-nav .navbar ul #blog #home_hover ul #port_lay {
+#nav1 .navbar ul #blog #home_hover ul #port_lay {
   width: 100%;
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-nav .navbar ul #blog #home_hover ul #port_lay .bi-chevron-right {
+#nav1 .navbar ul #blog #home_hover ul #port_lay .bi-chevron-right {
   font-size: 12px;
 }
-nav .navbar ul #blog:hover #home_hover {
+#nav1 .navbar ul #blog:hover #home_hover {
   overflow: hidden;
   opacity: 1;
   height: 130px;
   background-color: white;
 }
-nav .navbar ul #elements {
+#nav1 .navbar ul #elements {
   position: relative;
 }
-nav .navbar ul #elements #home_hover {
+#nav1 .navbar ul #elements #home_hover {
   overflow: hidden;
   opacity: 0;
   transition: 0.3s ease-in-out;
@@ -492,7 +494,7 @@ nav .navbar ul #elements #home_hover {
   align-items: center;
   list-style-type: none;
 }
-nav .navbar ul #elements #home_hover ul {
+#nav1 .navbar ul #elements #home_hover ul {
   width: 100%;
   margin: 0px;
   padding: 37px 10px 30px 20px;
@@ -502,10 +504,10 @@ nav .navbar ul #elements #home_hover ul {
   gap: 15px;
   list-style-type: none;
 }
-nav .navbar ul #elements #home_hover ul li {
+#nav1 .navbar ul #elements #home_hover ul li {
   cursor: pointer;
 }
-nav .navbar ul #elements #home_hover ul li a {
+#nav1 .navbar ul #elements #home_hover ul li a {
   padding: 3px;
   position: relative;
   font-size: 14px;
@@ -513,7 +515,7 @@ nav .navbar ul #elements #home_hover ul li a {
   text-decoration: none;
   display: block;
 }
-nav .navbar ul #elements #home_hover ul li a::before {
+#nav1 .navbar ul #elements #home_hover ul li a::before {
   width: 0%;
   height: 1px;
   position: absolute;
@@ -523,7 +525,7 @@ nav .navbar ul #elements #home_hover ul li a::before {
   content: "";
   transition: 0.3s ease-in-out;
 }
-nav .navbar ul #elements #home_hover ul li:hover a::before {
+#nav1 .navbar ul #elements #home_hover ul li:hover a::before {
   width: 100%;
   height: 1px;
   position: absolute;
@@ -532,23 +534,23 @@ nav .navbar ul #elements #home_hover ul li:hover a::before {
   background-color: black;
   content: "";
 }
-nav .navbar ul #elements #home_hover ul #port_lay {
+#nav1 .navbar ul #elements #home_hover ul #port_lay {
   width: 100%;
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-nav .navbar ul #elements #home_hover ul #port_lay .bi-chevron-left {
+#nav1 .navbar ul #elements #home_hover ul #port_lay .bi-chevron-left {
   font-size: 12px;
 }
-nav .navbar ul #elements:hover #home_hover {
+#nav1 .navbar ul #elements:hover #home_hover {
   overflow: hidden;
   opacity: 1;
   height: 178px;
   background-color: white;
 }
-nav .navbar #cart_add {
+#nav1 .navbar #cart_add {
   margin: 0px 0px 0px 20px;
   cursor: pointer;
   display: flex;
@@ -557,12 +559,12 @@ nav .navbar #cart_add {
   font-weight: 500;
   position: relative;
 }
-nav .navbar #cart_add p {
+#nav1 .navbar #cart_add p {
   margin: 0px;
   padding: 0px;
   font-size: 14px;
 }
-nav .navbar #cart_add .total_item {
+#nav1 .navbar #cart_add .total_item {
   position: absolute;
   top: -1px;
   left: 11px;
@@ -580,10 +582,10 @@ nav .navbar #cart_add .total_item {
   justify-content: center;
   border-radius: 50%;
 }
-nav .navbar #cart_add:hover .carts {
+#nav1 .navbar #cart_add:hover .carts {
   display: block;
 }
-nav .navbar #cart_add .carts {
+#nav1 .navbar #cart_add .carts {
   background-color: #fff;
   z-index: 999;
   position: absolute;
@@ -594,37 +596,37 @@ nav .navbar #cart_add .carts {
   width: 250px;
   padding: 10px;
 }
-nav .navbar #cart_add .carts .cart-item {
+#nav1 .navbar #cart_add .carts .cart-item {
   width: 100%;
   margin: 5px 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-nav .navbar #cart_add .carts .cart-item .item-info {
+#nav1 .navbar #cart_add .carts .cart-item .item-info {
   width: 100%;
   display: flex;
 }
-nav .navbar #cart_add .carts .cart-item .item-info .item_img {
+#nav1 .navbar #cart_add .carts .cart-item .item-info .item_img {
   width: 30%;
 }
-nav .navbar #cart_add .carts .cart-item .item-info .item_img img {
+#nav1 .navbar #cart_add .carts .cart-item .item-info .item_img img {
   width: 50px;
   height: 70px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-nav .navbar #cart_add .carts .cart-item .item-info .item_desc h4 {
+#nav1 .navbar #cart_add .carts .cart-item .item-info .item_desc h4 {
   font-size: 12px;
   font-family: "Montserrat", sans-serif;
   color: #1B1B1B;
 }
-nav .navbar #cart_add .carts .cart-item .item-info .item_desc .unit-price span {
+#nav1 .navbar #cart_add .carts .cart-item .item-info .item_desc .unit-price span {
   font-size: 12px;
   font-family: "Montserrat", sans-serif;
   color: #AFAFAF;
 }
-nav .navbar #cart_add .carts .subtotal {
+#nav1 .navbar #cart_add .carts .subtotal {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -634,12 +636,12 @@ nav .navbar #cart_add .carts .subtotal {
   width: 100%;
   color: #2B2B2B;
 }
-nav .navbar #cart_add .carts .cart_footer {
+#nav1 .navbar #cart_add .carts .cart_footer {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
 }
-nav .navbar #cart_add .carts .cart_footer button {
+#nav1 .navbar #cart_add .carts .cart_footer button {
   width: 45%;
   height: 40px;
   border: none;
@@ -653,8 +655,16 @@ nav .navbar #cart_add .carts .cart_footer button {
   text-align: center;
   cursor: pointer;
 }
-nav .navbar #cart_add .carts .cart_footer #black {
+#nav1 .navbar #cart_add .carts .cart_footer #black {
   background-color: #000000;
+}
+
+.navbaractive {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: 0.5s ease-in-out;
 }
 
 #swiper_bundle {

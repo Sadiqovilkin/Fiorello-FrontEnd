@@ -139,7 +139,7 @@ const CardData=[
     function ProductRender() {
         CardData.map((products)=>{
             Card.innerHTML +=`
-            <div class="column col-lg-3 ${products.ClassAdd}">
+            <div class="column show col-lg-3 ${products.ClassAdd}">
             <div class="content">
               <img src="${products.Imgsrc}" alt="Mountains">
               <h4>${products.Description}</h4>
@@ -260,7 +260,27 @@ const CardData=[
             console.log("no");
                 })
     }
-    
-    
-    
+    // navbar scrool
+    const addcart=document.getElementById('cart_add')
+    const Navbar=document.getElementById('nav1')
+
+     window.addEventListener('scroll',()=>{
+      if(document.body.scrollTop > 25 || document.documentElement.scrollTop > 25){
+        Navbar.style.transform = "translateY(-100px)";
+      }
+      else{
+        Navbar.style.transform = "translateY(0px)";
+      }
+      if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+        bi_search.style.display = "none";
+        addcart.style.display = "none";
+        Navbar.classList.add("navbaractive")
+        Navbar.style.transform = "translateY(0px)";
+      } 
+      else {
+         bi_search.style.display = "block";
+         addcart.style.display = "flex";
+        Navbar.classList.remove("navbaractive")
+      }
+    })
     
