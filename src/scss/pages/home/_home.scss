@@ -3,6 +3,7 @@
   background-color: #f3f3f3;
   padding: 30px 0;
   .left_side {
+    width: 100%;
     position: relative;
     z-index: 1;
     text-align: start;
@@ -11,7 +12,7 @@
       width: 65%;
       color: $black-color;
       text-align: inherit;
-      font-size: 41px;
+
 
       h3 {
         font-weight: 400;
@@ -20,12 +21,15 @@
         display: inline;
         text-align: inherit;
         font-size: 41px;
+        @media (max-width:1024px) {
+          font-size: 31px;
+        }
       }
       #flowers {
         font-weight: 400;
         color: $orange-color;
         text-align: inherit;
-        font-size: 41px;
+     
       }
     }
     #title {
@@ -114,7 +118,7 @@
   }
 }
 #filter {
-  /* Create three equal columns that floats next to each other */
+
   .column {
     display: none;
     .content {
@@ -230,7 +234,7 @@
     flex-direction: column;
     width: 100%;
  text-align: start;
-  padding: 20px;
+ 
 justify-content: start;
 align-items: flex-start;
 height: 0;
@@ -252,12 +256,17 @@ opacity: 0;
   }
 }
 .filter_btn{
+  
   position: relative;
+  @media (max-width:580px) {
+    text-align: left !important;
+    
+  }
   a{
     text-decoration: none;
     color: $black-color;
     font-family: $font-Mont;
-    font-size: 12px;
+    font-size: 11px;
     line-height: 2em;
     font-weight: 500;
     letter-spacing: .1em;
@@ -277,6 +286,14 @@ position: absolute;
 padding: 20px;
 // top: -200%;
 left: -150px;
+@media (max-width:1024px) {
+  left: -200px;
+    
+  }
+@media (max-width:580px) {
+left: 0px;
+  
+}
 ul{
   #list_header{
     font-size:22px ;
@@ -342,7 +359,7 @@ img{
 
     
 }
-      .right_side{
+      .wrapper_texts{
           padding: 17px 0;
           margin-left: 57px;
           .header{
@@ -351,15 +368,19 @@ img{
          gap: 15px;
   
               h3{
-                 @include _main($display:inline ,  $text-align:inherit , $font_s:28px , $margin:0px);
-      font-weight: 400;      
+                 @include _main($display:inline ,  $text-align:inherit , $font_s:30px , $margin:0px);
+      font-weight: 400; 
+      @media (max-width:1024px) {
+        font-size: 25px;
+        
+      }     
               }
       #flowers{
           @include _main($color:red , $text-align:inherit , $font_s:28px);
           font-weight: 400;    
         }  
           }
-          #text_p{
+          p{
               color: #acacac;
               margin: 28px 0;
           }
@@ -369,7 +390,7 @@ img{
               gap: 15px;
               list-style-type: none;
               li{
-                  @include _main($display:flex ,  ) ;
+                 display: flex;
                   gap: 10px;
                   flex-direction: row;
                   list-style: none;
@@ -471,6 +492,12 @@ form{
       border: 1px solid transparent;
       color: white;
       background-color: $orange-bgcolor;
+      @media (max-width:1024px) {
+        width: 15%;
+      }
+      @media (max-width:768px) {
+        width: 25%;
+      }
   }
 }
 }
@@ -498,7 +525,7 @@ form{
           transform: scale(1);
           img{
               transition: .2s ease-in-out;
-              @include _main($width:100% , $height:268px , $object_f:contain );
+              @include _main($width:100% , $height:268px , $object_f:cover );
           }
           .time_box{
               transition: .3s ease-in-out;
@@ -506,6 +533,7 @@ form{
               &:hover{
                   color: $orange-color;
               }
+
           }
           &:hover img{
               transform: scale(1.04);
@@ -528,6 +556,10 @@ form{
 .swiper-button-prev{
   top: 100px !important;
   left: 190px !important;
+  @media (max-width:768px) {
+    top: 90px !important;
+    left: 10px !important;
+  }
   .bi{
       font-size: 36px;
       color: $lightgray-txtcolor;
@@ -539,6 +571,10 @@ form{
 .swiper-button-next{
   top: 100px !important;
   right: 190px !important;
+  @media (max-width:768px) {
+    top: 90px !important;
+    right: 10px !important;
+  }
   .bi{
       font-size: 36px;
       color: $lightgray-txtcolor;

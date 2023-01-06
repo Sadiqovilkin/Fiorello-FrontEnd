@@ -48,6 +48,9 @@ footer{
             display: flex;
             justify-content: flex-end;
             gap: 20px;
+            @media (max-width:768px) {
+                justify-content: center;
+            }
             a{
                 font-family: $font-Mont;
                 font-size: 10px;
