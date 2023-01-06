@@ -1,0 +1,62 @@
+footer{
+    margin-top: 100px;
+   background-color: #fefaf3;
+   .footer_lists{
+    padding: 90px 0;
+    h6{
+        font-size: 12px;
+        color: $black-color;
+        font-family: $font-Mont;
+        margin-bottom: 20px;
+    }
+        ul{
+        @include _main($display:flex , $just_content:center , $margin:0px , $padding:0px);
+        list-style-type: none;
+        flex-direction: column;
+        li{
+            list-style: none;
+            line-height: 30px;
+            a{
+                @include _main($color:$footer-lightcolor , $f_size:12px );
+                font-family: $font-Mont;
+                text-decoration: none;
+                transition: .3s ease-in-out;
+                &:hover{
+                    color: rgb(255, 40, 40);
+                }
+            }
+        }
+    }
+   }
+   .footer_foot{
+    .foot_border{
+        @include _main($f_size:13px , $padding:20px 0 , $color:$footer-lightcolor );
+        border-top: 1px solid #eceae1;
+        a{
+            @include _main($color:$gray-txtcolor , $f_size:14px ,);
+            text-decoration: none;
+            transition: .3s ease-in-out;
+            &:hover{
+                color:$orange-color;
+            }
+        }
+      
+        img{
+            @include _main($object_f:contain , $cursor:pointer);
+        }
+        .sites{
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+            a{
+                font-family: $font-Mont;
+                font-size: 10px;
+                color: $footer-lightcolor;
+                &:hover{
+                    color: $orange-color;
+                }
+            }
+        }
+    }
+   }
+}
