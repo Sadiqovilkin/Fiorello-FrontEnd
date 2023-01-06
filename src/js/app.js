@@ -300,3 +300,24 @@ const CardData=[
       },
     });
     
+    // back to top
+    const mybutton = document.getElementById("myBtn");
+ 
+    window.addEventListener('scroll',()=>{
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        mybutton.style.opacity = "1";
+        mybutton.style.display = "flex";
+      } 
+      else {
+        mybutton.style.display = "none";
+      }
+    })
+    
+      if(mybutton){
+        mybutton.addEventListener('click',()=>{
+          
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+          
+        })
+      }
