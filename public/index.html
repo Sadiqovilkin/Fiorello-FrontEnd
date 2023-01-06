@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Fiorello – A Flower Shop and Florist WooCommerce Theme</title>
     <link rel="stylesheet" href="../src/scss/style.css">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
@@ -12,6 +12,7 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
+    <link rel="icon" href="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/cropped-Favicon-32x32.png" sizes="32x32">
     <link
       rel="stylesheet"
       type="text/css"
@@ -341,14 +342,56 @@
       <section id="filter">
         <div class="container py-5 my-5">
          
-        <div id="myBtnContainer">
-          <button class="btn active" onclick="filterSelection('all')">  All</button>
-          <button class="btn" onclick="filterSelection('cactuses')"> Cactuses</button>
-          <button class="btn" onclick="filterSelection('exotic')"> Exotic</button>
-          <button class="btn" onclick="filterSelection('greens')"> Greens</button>
-          <button class="btn" onclick="filterSelection('popular')"> Popular</button>
-          <button class="btn" onclick="filterSelection('various')"> Various</button>
-          <button class="btn" onclick="filterSelection('winter')"> Winter</button>
+        <div class="row justify-content-between">
+          <div class="col-lg-8 col-md-10 col-sm-6">
+            <div id="myBtnContainer">
+              <button class="btn active" onclick="filterSelection('all')">  All</button>
+              <button class="btn" onclick="filterSelection('cactuses')"> Cactuses</button>
+              <button class="btn" onclick="filterSelection('exotic')"> Exotic</button>
+              <button class="btn" onclick="filterSelection('greens')"> Greens</button>
+              <button class="btn" onclick="filterSelection('popular')"> Popular</button>
+              <button class="btn" onclick="filterSelection('various')"> Various</button>
+              <button class="btn" onclick="filterSelection('winter')"> Winter</button>
+            </div>
+            <div class="btncontainer">
+              <a href="#">Categories <i class="bi bi-caret-down-fill"></i></a> 
+              <div class="btn_hover">
+               
+                <button class="btn active" onclick="filterSelection('all')">  All</button>
+                <button class="btn" onclick="filterSelection('cactuses')"> Cactuses</button>
+                <button class="btn" onclick="filterSelection('exotic')"> Exotic</button>
+                <button class="btn" onclick="filterSelection('greens')"> Greens</button>
+                <button class="btn" onclick="filterSelection('popular')"> Popular</button>
+                <button class="btn" onclick="filterSelection('various')"> Various</button>
+                <button class="btn" onclick="filterSelection('winter')"> Winter</button>
+              </div>
+            </div>
+          </div>
+         <div class="col-lg-2 col-md-2 col-sm-6 text-center"> 
+          <div class="filter_btn">
+          <a href="#">Filter <i class="bi bi-caret-down-fill"></i></a> 
+          <div class="filter_btn_hover">
+           
+            <ul>
+              <li id="list_header">Sort By</li>
+              <li>Default</li>
+              <li>Popularity</li>
+              <li>Newness</li>
+              <li>Price:Low To High</li>
+              <li>Price:Low To Low</li>
+            </ul>
+            <ul>
+              <li id="list_header">Price range</li>
+              <li>All</li>
+              <li>$0-$10</li>
+              <li>$10-$20</li>
+              <li>$20-$30</li>
+              <li>$30-$40</li>
+              <li>$40+</li>
+            </ul>
+          </div>
+        </div>
+      </div>
         </div>
         
         <!-- Portfolio Gallery Grid -->

@@ -852,7 +852,7 @@
 #filter .show {
   display: block;
 }
-#filter .btn {
+#filter #myBtnContainer .btn {
   border: none;
   outline: none;
   padding: 12px 16px;
@@ -862,8 +862,106 @@
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
 }
-#filter .btn:hover {
+@media (max-width: 1024px) {
+  #filter #myBtnContainer .btn {
+    padding: 10px 10px;
+  }
+}
+#filter #myBtnContainer .btn:hover {
   color: #FF0000;
+}
+@media (max-width: 768px) {
+  #filter #myBtnContainer {
+    display: none;
+  }
+}
+#filter .btncontainer {
+  display: none;
+}
+@media (max-width: 768px) {
+  #filter .btncontainer {
+    display: block;
+  }
+}
+#filter .btncontainer a {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  line-height: 2em;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+#filter .btncontainer:hover .btn_hover {
+  height: auto;
+  opacity: 1;
+}
+#filter .btncontainer .btn_hover {
+  transition: 0.5s ease-in-out;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: start;
+  padding: 20px;
+  justify-content: start;
+  align-items: flex-start;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+#filter .btncontainer .btn_hover .btn {
+  border: none;
+  outline: none;
+  padding: 5px 0px;
+  background-color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+}
+#filter .btncontainer .btn_hover .btn:hover {
+  color: #FF0000;
+}
+#filter .filter_btn {
+  position: relative;
+}
+#filter .filter_btn a {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  line-height: 2em;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+#filter .filter_btn:hover .filter_btn_hover {
+  display: flex;
+}
+#filter .filter_btn .filter_btn_hover {
+  background-color: #fff;
+  display: none;
+  width: 488px;
+  position: absolute;
+  padding: 20px;
+  left: -150px;
+}
+#filter .filter_btn .filter_btn_hover ul #list_header {
+  font-size: 22px;
+  color: #000000;
+  margin: 20px 0;
+}
+#filter .filter_btn .filter_btn_hover ul li {
+  cursor: pointer;
+  list-style: none;
+  font-size: 13px;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-family: "Playfair Display", serif;
+  color: #6D6a6A;
+  margin: 10px 0;
 }
 #filter .active {
   color: #FF0000;

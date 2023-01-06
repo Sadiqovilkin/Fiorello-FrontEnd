@@ -140,7 +140,7 @@ const CardData=[
     function ProductRender() {
         CardData.map((products)=>{
             Card.innerHTML +=`
-            <div class="column show col-lg-3 ${products.ClassAdd}">
+            <div class="column show col-lg-3 col-md-6 ${products.ClassAdd}">
             <div class="content">
               <img src="${products.Imgsrc}" alt="Mountains">
               <h4>${products.Description}</h4>
