@@ -321,3 +321,16 @@ const CardData=[
           
         })
       }
+      const NavbarOpen=document.querySelector(".nav_btn")
+      const NavbarItems=document.querySelector(".nav_items")
+      const NavbarClose=document.querySelector("#nav_close")
+      if (NavbarOpen) {
+        NavbarOpen.addEventListener('click',()=>{
+          NavbarItems.style.display='block'
+        })
+      }
+      if (NavbarClose) {
+        NavbarClose.addEventListener('click',()=>{
+          NavbarItems.style.display='none'
+        })
+      }

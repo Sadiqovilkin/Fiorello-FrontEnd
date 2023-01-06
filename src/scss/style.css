@@ -75,32 +75,37 @@ footer .footer_foot .foot_border .sites a:hover {
   color: #FF0000;
 }
 
-#nav1 {
+header #nav1 {
   transition: 0.5s ease-in-out;
   z-index: 10;
   position: relative;
   background-color: #fff;
 }
-#nav1 .logo {
+header #nav1 .logo {
   width: 100%;
   height: 115px;
   display: flex;
   align-items: center;
 }
-#nav1 .logo img {
+header #nav1 .logo img {
   width: 100%;
   height: 25px;
   cursor: pointer;
   -o-object-fit: contain;
      object-fit: contain;
 }
-#nav1 .navbar {
+header #nav1 .navbar {
   height: 100%;
   display: flex;
   justify-content: end;
   align-items: center;
 }
-#nav1 .navbar ul {
+@media (max-width: 1024px) {
+  header #nav1 .navbar {
+    display: none;
+  }
+}
+header #nav1 .navbar ul {
   margin: 0px;
   padding: 0px;
   display: flex;
@@ -109,11 +114,11 @@ footer .footer_foot .foot_border .sites a:hover {
   gap: 25px;
   list-style-type: none;
 }
-#nav1 .navbar ul li {
+header #nav1 .navbar ul li {
   list-style: none;
   margin-right: 20px;
 }
-#nav1 .navbar ul li a {
+header #nav1 .navbar ul li a {
   padding: 45px 3px;
   position: relative;
   font-size: 14px;
@@ -122,7 +127,7 @@ footer .footer_foot .foot_border .sites a:hover {
   display: block;
   font-family: "Montserrat", sans-serif;
 }
-#nav1 .navbar ul li a::before {
+header #nav1 .navbar ul li a::before {
   width: 0%;
   height: 1px;
   position: absolute;
@@ -132,7 +137,7 @@ footer .footer_foot .foot_border .sites a:hover {
   content: "";
   transition: 0.3s ease-in-out;
 }
-#nav1 .navbar ul li a:hover::before {
+header #nav1 .navbar ul li a:hover::before {
   width: 100%;
   height: 1px;
   position: absolute;
@@ -141,14 +146,14 @@ footer .footer_foot .foot_border .sites a:hover {
   background-color: #000000;
   content: "";
 }
-#nav1 .navbar ul #search_click {
+header #nav1 .navbar ul #search_click {
   position: relative;
   cursor: pointer;
 }
-#nav1 .navbar ul #search_click:hover {
+header #nav1 .navbar ul #search_click:hover {
   color: #F34F3F;
 }
-#nav1 .navbar ul #search_click .search {
+header #nav1 .navbar ul #search_click .search {
   transition: 0.3s all;
   overflow: hidden;
   opacity: 0;
@@ -159,12 +164,12 @@ footer .footer_foot .foot_border .sites a:hover {
   left: -273px;
   display: flex;
 }
-#nav1 .navbar ul #search_click .search form {
+header #nav1 .navbar ul #search_click .search form {
   width: 292px;
   display: flex;
   align-items: center;
 }
-#nav1 .navbar ul #search_click .search form input {
+header #nav1 .navbar ul #search_click .search form input {
   width: 120%;
   padding: 12px;
   border: 1px solid transparent;
@@ -172,7 +177,7 @@ footer .footer_foot .foot_border .sites a:hover {
   outline: none;
   font-size: 14px;
 }
-#nav1 .navbar ul #search_click .search form button {
+header #nav1 .navbar ul #search_click .search form button {
   margin: 0 0 0 -5px;
   padding: 12px;
   border: 1px solid transparent;
@@ -180,15 +185,15 @@ footer .footer_foot .foot_border .sites a:hover {
   outline: none;
   font-size: 14px;
 }
-#nav1 .navbar ul #search_click .active {
+header #nav1 .navbar ul #search_click .active {
   overflow: hidden;
   height: 60px;
   opacity: 1;
 }
-#nav1 .navbar ul #home {
+header #nav1 .navbar ul #home {
   position: relative;
 }
-#nav1 .navbar ul #home a::before {
+header #nav1 .navbar ul #home a::before {
   width: 100%;
   height: 1px;
   position: absolute;
@@ -197,7 +202,7 @@ footer .footer_foot .foot_border .sites a:hover {
   background-color: black;
   content: "";
 }
-#nav1 .navbar ul #home #home_hover {
+header #nav1 .navbar ul #home #list_hover {
   overflow: hidden;
   opacity: 0;
   transition: 0.3s ease-in-out;
@@ -213,7 +218,7 @@ footer .footer_foot .foot_border .sites a:hover {
   align-items: center;
   list-style-type: none;
 }
-#nav1 .navbar ul #home #home_hover ul {
+header #nav1 .navbar ul #home #list_hover ul {
   width: 100%;
   margin: 0px;
   padding: 37px 10px 30px 20px;
@@ -223,7 +228,7 @@ footer .footer_foot .foot_border .sites a:hover {
   gap: 15px;
   list-style-type: none;
 }
-#nav1 .navbar ul #home #home_hover ul li a {
+header #nav1 .navbar ul #home #list_hover ul li a {
   padding: 3px;
   position: relative;
   font-size: 14px;
@@ -231,7 +236,7 @@ footer .footer_foot .foot_border .sites a:hover {
   text-decoration: none;
   display: block;
 }
-#nav1 .navbar ul #home #home_hover ul li a::before {
+header #nav1 .navbar ul #home #list_hover ul li a::before {
   width: 0%;
   height: 1px;
   position: absolute;
@@ -241,7 +246,7 @@ footer .footer_foot .foot_border .sites a:hover {
   content: "";
   transition: 0.3s ease-in-out;
 }
-#nav1 .navbar ul #home #home_hover ul li a:hover::before {
+header #nav1 .navbar ul #home #list_hover ul li a:hover::before {
   width: 100%;
   height: 1px;
   position: absolute;
@@ -250,16 +255,16 @@ footer .footer_foot .foot_border .sites a:hover {
   background-color: black;
   content: "";
 }
-#nav1 .navbar ul #home:hover #home_hover {
+header #nav1 .navbar ul #home:hover #list_hover {
   height: 300px;
   background-color: white;
   overflow: hidden;
   opacity: 1;
 }
-#nav1 .navbar ul #pages {
+header #nav1 .navbar ul #pages {
   position: relative;
 }
-#nav1 .navbar ul #pages #home_hover {
+header #nav1 .navbar ul #pages #list_hover {
   overflow: hidden;
   opacity: 0;
   transition: 0.3s ease-in-out;
@@ -275,7 +280,7 @@ footer .footer_foot .foot_border .sites a:hover {
   align-items: center;
   list-style-type: none;
 }
-#nav1 .navbar ul #pages #home_hover ul {
+header #nav1 .navbar ul #pages #list_hover ul {
   width: 100%;
   margin: 0px;
   padding: 37px 10px 30px 20px;
@@ -285,10 +290,10 @@ footer .footer_foot .foot_border .sites a:hover {
   gap: 15px;
   list-style-type: none;
 }
-#nav1 .navbar ul #pages #home_hover ul li {
+header #nav1 .navbar ul #pages #list_hover ul li {
   cursor: pointer;
 }
-#nav1 .navbar ul #pages #home_hover ul li a {
+header #nav1 .navbar ul #pages #list_hover ul li a {
   padding: 3px;
   position: relative;
   font-size: 14px;
@@ -296,7 +301,7 @@ footer .footer_foot .foot_border .sites a:hover {
   text-decoration: none;
   display: block;
 }
-#nav1 .navbar ul #pages #home_hover ul li a::before {
+header #nav1 .navbar ul #pages #list_hover ul li a::before {
   width: 0%;
   height: 1px;
   position: absolute;
@@ -306,7 +311,7 @@ footer .footer_foot .foot_border .sites a:hover {
   content: "";
   transition: 0.3s ease-in-out;
 }
-#nav1 .navbar ul #pages #home_hover ul li a:hover::before {
+header #nav1 .navbar ul #pages #list_hover ul li a:hover::before {
   width: 100%;
   height: 1px;
   position: absolute;
@@ -315,16 +320,16 @@ footer .footer_foot .foot_border .sites a:hover {
   background-color: black;
   content: "";
 }
-#nav1 .navbar ul #pages:hover #home_hover {
+header #nav1 .navbar ul #pages:hover #list_hover {
   overflow: hidden;
   opacity: 1;
   height: 130px;
   background-color: white;
 }
-#nav1 .navbar ul #shop {
+header #nav1 .navbar ul #shop {
   position: relative;
 }
-#nav1 .navbar ul #shop #home_hover {
+header #nav1 .navbar ul #shop #list_hover {
   overflow: hidden;
   opacity: 0;
   transition: 0.3s ease-in-out;
@@ -340,7 +345,7 @@ footer .footer_foot .foot_border .sites a:hover {
   align-items: center;
   list-style-type: none;
 }
-#nav1 .navbar ul #shop #home_hover ul {
+header #nav1 .navbar ul #shop #list_hover ul {
   width: 100%;
   margin: 0px;
   padding: 37px 10px 30px 20px;
@@ -350,11 +355,11 @@ footer .footer_foot .foot_border .sites a:hover {
   gap: 15px;
   list-style-type: none;
 }
-#nav1 .navbar ul #shop #home_hover ul li {
+header #nav1 .navbar ul #shop #list_hover ul li {
   line-height: 25px;
   cursor: pointer;
 }
-#nav1 .navbar ul #shop #home_hover ul li a {
+header #nav1 .navbar ul #shop #list_hover ul li a {
   padding: 3px;
   position: relative;
   font-size: 14px;
@@ -362,7 +367,7 @@ footer .footer_foot .foot_border .sites a:hover {
   text-decoration: none;
   display: block;
 }
-#nav1 .navbar ul #shop #home_hover ul li a::before {
+header #nav1 .navbar ul #shop #list_hover ul li a::before {
   width: 0%;
   height: 1px;
   position: absolute;
@@ -372,7 +377,7 @@ footer .footer_foot .foot_border .sites a:hover {
   content: "";
   transition: 0.3s ease-in-out;
 }
-#nav1 .navbar ul #shop #home_hover ul li:hover a::before {
+header #nav1 .navbar ul #shop #list_hover ul li:hover a::before {
   width: 100%;
   height: 1px;
   position: absolute;
@@ -381,23 +386,23 @@ footer .footer_foot .foot_border .sites a:hover {
   background-color: black;
   content: "";
 }
-#nav1 .navbar ul #shop:hover #home_hover {
+header #nav1 .navbar ul #shop:hover #list_hover {
   overflow: hidden;
   opacity: 1;
   height: 450px;
   background-color: white;
 }
-#nav1 .navbar ul #shop p {
+header #nav1 .navbar ul #shop p {
   margin: 10px 0;
   color: #000000;
   text-align: center;
   font-size: 16px;
   font-weight: 600;
 }
-#nav1 .navbar ul #portfolio {
+header #nav1 .navbar ul #portfolio {
   position: relative;
 }
-#nav1 .navbar ul #portfolio #home_hover {
+header #nav1 .navbar ul #portfolio #list_hover {
   overflow: hidden;
   opacity: 0;
   transition: 0.3s ease-in-out;
@@ -413,7 +418,7 @@ footer .footer_foot .foot_border .sites a:hover {
   align-items: center;
   list-style-type: none;
 }
-#nav1 .navbar ul #portfolio #home_hover ul {
+header #nav1 .navbar ul #portfolio #list_hover ul {
   width: 100%;
   margin: 0px;
   padding: 37px 10px 30px 20px;
@@ -423,10 +428,10 @@ footer .footer_foot .foot_border .sites a:hover {
   gap: 15px;
   list-style-type: none;
 }
-#nav1 .navbar ul #portfolio #home_hover ul li {
+header #nav1 .navbar ul #portfolio #list_hover ul li {
   cursor: pointer;
 }
-#nav1 .navbar ul #portfolio #home_hover ul li a {
+header #nav1 .navbar ul #portfolio #list_hover ul li a {
   padding: 3px;
   position: relative;
   font-size: 14px;
@@ -434,7 +439,7 @@ footer .footer_foot .foot_border .sites a:hover {
   text-decoration: none;
   display: block;
 }
-#nav1 .navbar ul #portfolio #home_hover ul li a::before {
+header #nav1 .navbar ul #portfolio #list_hover ul li a::before {
   width: 0%;
   height: 1px;
   position: absolute;
@@ -444,7 +449,7 @@ footer .footer_foot .foot_border .sites a:hover {
   content: "";
   transition: 0.3s ease-in-out;
 }
-#nav1 .navbar ul #portfolio #home_hover ul li:hover a::before {
+header #nav1 .navbar ul #portfolio #list_hover ul li:hover a::before {
   width: 100%;
   height: 1px;
   position: absolute;
@@ -453,26 +458,26 @@ footer .footer_foot .foot_border .sites a:hover {
   background-color: black;
   content: "";
 }
-#nav1 .navbar ul #portfolio #home_hover ul #port_lay {
+header #nav1 .navbar ul #portfolio #list_hover ul #port_lay {
   width: 100%;
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#nav1 .navbar ul #portfolio #home_hover ul #port_lay .bi-chevron-right {
+header #nav1 .navbar ul #portfolio #list_hover ul #port_lay .bi-chevron-right {
   font-size: 12px;
 }
-#nav1 .navbar ul #portfolio:hover #home_hover {
+header #nav1 .navbar ul #portfolio:hover #list_hover {
   overflow: hidden;
   opacity: 1;
   height: 230px;
   background-color: white;
 }
-#nav1 .navbar ul #blog {
+header #nav1 .navbar ul #blog {
   position: relative;
 }
-#nav1 .navbar ul #blog #home_hover {
+header #nav1 .navbar ul #blog #list_hover {
   overflow: hidden;
   opacity: 0;
   transition: 0.3s ease-in-out;
@@ -488,7 +493,7 @@ footer .footer_foot .foot_border .sites a:hover {
   align-items: center;
   list-style-type: none;
 }
-#nav1 .navbar ul #blog #home_hover ul {
+header #nav1 .navbar ul #blog #list_hover ul {
   width: 100%;
   margin: 0px;
   padding: 37px 10px 30px 20px;
@@ -498,10 +503,10 @@ footer .footer_foot .foot_border .sites a:hover {
   gap: 15px;
   list-style-type: none;
 }
-#nav1 .navbar ul #blog #home_hover ul li {
+header #nav1 .navbar ul #blog #list_hover ul li {
   cursor: pointer;
 }
-#nav1 .navbar ul #blog #home_hover ul li a {
+header #nav1 .navbar ul #blog #list_hover ul li a {
   padding: 3px;
   position: relative;
   font-size: 14px;
@@ -509,7 +514,7 @@ footer .footer_foot .foot_border .sites a:hover {
   text-decoration: none;
   display: block;
 }
-#nav1 .navbar ul #blog #home_hover ul li a::before {
+header #nav1 .navbar ul #blog #list_hover ul li a::before {
   width: 0%;
   height: 1px;
   position: absolute;
@@ -519,7 +524,7 @@ footer .footer_foot .foot_border .sites a:hover {
   content: "";
   transition: 0.3s ease-in-out;
 }
-#nav1 .navbar ul #blog #home_hover ul li:hover a::before {
+header #nav1 .navbar ul #blog #list_hover ul li:hover a::before {
   width: 100%;
   height: 1px;
   position: absolute;
@@ -528,26 +533,26 @@ footer .footer_foot .foot_border .sites a:hover {
   background-color: black;
   content: "";
 }
-#nav1 .navbar ul #blog #home_hover ul #port_lay {
+header #nav1 .navbar ul #blog #list_hover ul #port_lay {
   width: 100%;
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#nav1 .navbar ul #blog #home_hover ul #port_lay .bi-chevron-right {
+header #nav1 .navbar ul #blog #list_hover ul #port_lay .bi-chevron-right {
   font-size: 12px;
 }
-#nav1 .navbar ul #blog:hover #home_hover {
+header #nav1 .navbar ul #blog:hover #list_hover {
   overflow: hidden;
   opacity: 1;
   height: 130px;
   background-color: white;
 }
-#nav1 .navbar ul #elements {
+header #nav1 .navbar ul #elements {
   position: relative;
 }
-#nav1 .navbar ul #elements #home_hover {
+header #nav1 .navbar ul #elements #list_hover {
   overflow: hidden;
   opacity: 0;
   transition: 0.3s ease-in-out;
@@ -563,7 +568,7 @@ footer .footer_foot .foot_border .sites a:hover {
   align-items: center;
   list-style-type: none;
 }
-#nav1 .navbar ul #elements #home_hover ul {
+header #nav1 .navbar ul #elements #list_hover ul {
   width: 100%;
   margin: 0px;
   padding: 37px 10px 30px 20px;
@@ -573,10 +578,10 @@ footer .footer_foot .foot_border .sites a:hover {
   gap: 15px;
   list-style-type: none;
 }
-#nav1 .navbar ul #elements #home_hover ul li {
+header #nav1 .navbar ul #elements #list_hover ul li {
   cursor: pointer;
 }
-#nav1 .navbar ul #elements #home_hover ul li a {
+header #nav1 .navbar ul #elements #list_hover ul li a {
   padding: 3px;
   position: relative;
   font-size: 14px;
@@ -584,7 +589,7 @@ footer .footer_foot .foot_border .sites a:hover {
   text-decoration: none;
   display: block;
 }
-#nav1 .navbar ul #elements #home_hover ul li a::before {
+header #nav1 .navbar ul #elements #list_hover ul li a::before {
   width: 0%;
   height: 1px;
   position: absolute;
@@ -594,7 +599,7 @@ footer .footer_foot .foot_border .sites a:hover {
   content: "";
   transition: 0.3s ease-in-out;
 }
-#nav1 .navbar ul #elements #home_hover ul li:hover a::before {
+header #nav1 .navbar ul #elements #list_hover ul li:hover a::before {
   width: 100%;
   height: 1px;
   position: absolute;
@@ -603,23 +608,23 @@ footer .footer_foot .foot_border .sites a:hover {
   background-color: black;
   content: "";
 }
-#nav1 .navbar ul #elements #home_hover ul #port_lay {
+header #nav1 .navbar ul #elements #list_hover ul #port_lay {
   width: 100%;
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#nav1 .navbar ul #elements #home_hover ul #port_lay .bi-chevron-left {
+header #nav1 .navbar ul #elements #list_hover ul #port_lay .bi-chevron-left {
   font-size: 12px;
 }
-#nav1 .navbar ul #elements:hover #home_hover {
+header #nav1 .navbar ul #elements:hover #list_hover {
   overflow: hidden;
   opacity: 1;
   height: 178px;
   background-color: white;
 }
-#nav1 .navbar #cart_add {
+header #nav1 .navbar #cart_add {
   margin: 0px 0px 0px 20px;
   cursor: pointer;
   display: flex;
@@ -628,12 +633,12 @@ footer .footer_foot .foot_border .sites a:hover {
   font-weight: 500;
   position: relative;
 }
-#nav1 .navbar #cart_add p {
+header #nav1 .navbar #cart_add p {
   margin: 0px;
   padding: 0px;
   font-size: 14px;
 }
-#nav1 .navbar #cart_add .total_item {
+header #nav1 .navbar #cart_add .total_item {
   position: absolute;
   top: -1px;
   left: 11px;
@@ -651,10 +656,10 @@ footer .footer_foot .foot_border .sites a:hover {
   justify-content: center;
   border-radius: 50%;
 }
-#nav1 .navbar #cart_add:hover .carts {
+header #nav1 .navbar #cart_add:hover .carts {
   display: block;
 }
-#nav1 .navbar #cart_add .carts {
+header #nav1 .navbar #cart_add .carts {
   background-color: #fff;
   z-index: 999;
   position: absolute;
@@ -665,37 +670,37 @@ footer .footer_foot .foot_border .sites a:hover {
   width: 250px;
   padding: 10px;
 }
-#nav1 .navbar #cart_add .carts .cart-item {
+header #nav1 .navbar #cart_add .carts .cart-item {
   width: 100%;
   margin: 5px 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-#nav1 .navbar #cart_add .carts .cart-item .item-info {
+header #nav1 .navbar #cart_add .carts .cart-item .item-info {
   width: 100%;
   display: flex;
 }
-#nav1 .navbar #cart_add .carts .cart-item .item-info .item_img {
+header #nav1 .navbar #cart_add .carts .cart-item .item-info .item_img {
   width: 30%;
 }
-#nav1 .navbar #cart_add .carts .cart-item .item-info .item_img img {
+header #nav1 .navbar #cart_add .carts .cart-item .item-info .item_img img {
   width: 50px;
   height: 70px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-#nav1 .navbar #cart_add .carts .cart-item .item-info .item_desc h4 {
+header #nav1 .navbar #cart_add .carts .cart-item .item-info .item_desc h4 {
   font-size: 12px;
   font-family: "Montserrat", sans-serif;
   color: #1B1B1B;
 }
-#nav1 .navbar #cart_add .carts .cart-item .item-info .item_desc .unit-price span {
+header #nav1 .navbar #cart_add .carts .cart-item .item-info .item_desc .unit-price span {
   font-size: 12px;
   font-family: "Montserrat", sans-serif;
   color: #AFAFAF;
 }
-#nav1 .navbar #cart_add .carts .subtotal {
+header #nav1 .navbar #cart_add .carts .subtotal {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -705,12 +710,12 @@ footer .footer_foot .foot_border .sites a:hover {
   width: 100%;
   color: #2B2B2B;
 }
-#nav1 .navbar #cart_add .carts .cart_footer {
+header #nav1 .navbar #cart_add .carts .cart_footer {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
 }
-#nav1 .navbar #cart_add .carts .cart_footer button {
+header #nav1 .navbar #cart_add .carts .cart_footer button {
   width: 45%;
   height: 40px;
   border: none;
@@ -724,11 +729,73 @@ footer .footer_foot .foot_border .sites a:hover {
   text-align: center;
   cursor: pointer;
 }
-#nav1 .navbar #cart_add .carts .cart_footer #black {
+header #nav1 .navbar #cart_add .carts .cart_footer #black {
   background-color: #000000;
 }
-
-.navbaractive {
+header #nav1 .mobile_navbar {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+header #nav1 .mobile_navbar .nav_btn i {
+  font-size: 30px;
+}
+@media (min-width: 1024px) {
+  header #nav1 .mobile_navbar {
+    display: none;
+  }
+}
+header .nav_items {
+  background-color: #fff;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  z-index: 9999;
+  width: 40%;
+  height: 100vh;
+  padding: 20px;
+  overflow: auto;
+  display: none;
+}
+@media (min-width: 1024px) {
+  header .nav_items {
+    display: none;
+  }
+}
+header .nav_items #nav_close {
+  display: flex;
+  justify-content: right;
+  color: #FF0000;
+  font-size: 24px;
+}
+header .nav_items ul li {
+  list-style: none;
+  padding: 11px 0;
+}
+header .nav_items ul li a {
+  text-decoration: none;
+  color: #6D6a6A;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 11px 0;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+}
+header .nav_items ul li ahover {
+  color: #FF0000;
+}
+header .nav_items ul li:hover #list_hover {
+  height: auto;
+}
+header .nav_items ul li #list_hover {
+  transition: 0.5s ease-in-out;
+  width: 100%;
+  height: 0;
+  overflow: hidden !important;
+}
+header .navbaractive {
   position: fixed !important;
   top: 0;
   left: 0;
@@ -1375,7 +1442,7 @@ footer .footer_foot .foot_border .sites a:hover {
 
 #toolbar {
   position: fixed;
-  bottom: 150px;
+  bottom: 15%;
   right: 0px;
   display: flex;
   flex-direction: column;
