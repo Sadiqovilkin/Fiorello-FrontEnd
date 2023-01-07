@@ -198,15 +198,6 @@ header #nav1 .navbar ul #search_click .active {
 header #nav1 .navbar ul #home {
   position: relative;
 }
-header #nav1 .navbar ul #home a::before {
-  width: 100%;
-  height: 1px;
-  position: absolute;
-  top: 70px;
-  left: 0px;
-  background-color: black;
-  content: "";
-}
 header #nav1 .navbar ul #home #list_hover {
   overflow: hidden;
   opacity: 0;
@@ -628,6 +619,15 @@ header #nav1 .navbar ul #elements:hover #list_hover {
   opacity: 1;
   height: 178px;
   background-color: white;
+}
+header #nav1 .navbar ul #navbtnactive::before {
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 65px;
+  left: 0px;
+  background-color: #000000;
+  content: "";
 }
 header #nav1 .navbar #cart_add {
   margin: 0px 0px 0px 20px;
