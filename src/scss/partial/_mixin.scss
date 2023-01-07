@@ -1,0 +1,47 @@
+@mixin _main(
+  $width: null,
+  $height: null,
+  $margin: null,
+  $padding: null,
+  $position: null,
+  $top: null,
+  $left: null,
+  $f_size: null,
+  $color: null,
+  $cursor: null,
+  $border: null,
+  $border-radius: null,
+  $text-align: null,
+  $back-color: null,
+  $object_f: null,
+  $right: null,
+  $bottom: null,
+  $background: null,
+  $font_s: null,
+  $display: null,
+  $align_it: null,
+  $just_content: null
+) {
+  width: $width;
+  height: $height;
+  margin: $margin;
+  padding: $padding;
+  position: $position;
+  top: $top;
+  left: $left;
+  font-size: $f_size;
+  color: $color;
+  cursor: $cursor;
+  border: $border;
+  border-radius: $border-radius;
+  text-align: $text-align;
+  background-color: $back-color;
+  object-fit: $object_f;
+  right: $right;
+  bottom: $bottom;
+  background: $background;
+  font-size: $font_s;
+  display: $display;
+  justify-content: $just_content;
+  align-items: $align_it;
+}
