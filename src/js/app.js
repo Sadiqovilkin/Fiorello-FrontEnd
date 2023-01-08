@@ -253,16 +253,16 @@ const CardData=[
       
         updateCart();
       }
-     if(btnBasket){
-        btnBasket.addEventListener('click',()=>{
-    MainCarts.style.display="block";
-    console.log("ok");
-        })
-        btnBasket.addEventListener('dblclick',()=>{
-            MainCarts.style.display="none";
-            console.log("no");
-                })
-    }
+    //  if(btnBasket){
+    //     btnBasket.addEventListener('click',()=>{
+    // MainCarts.style.display="block";
+    // console.log("ok");
+    //     })
+    //     btnBasket.addEventListener('dblclick',()=>{
+    //         MainCarts.style.display="none";
+    //         console.log("no");
+    //             })
+    // }
     // navbar scrool
     const addcart=document.getElementById('cart_add')
     const Navbar=document.getElementById('nav1')
