@@ -334,3 +334,29 @@ const CardData=[
           NavbarItems.style.display='none'
         })
       }
+//        const plus = document.querySelectorAll('#plus')
+// const minus = document.querySelectorAll('#minus')
+// const text_pm = document.querySelector('#text_pm')
+
+// if (plus) {
+//   for (let index = 0; index < plus.length; index++) {
+//     const element = plus[index]
+//     element.addEventListener('click', () => {
+//       if (text_pm.value > 0) {
+//         text_pm.value++
+//       } else {
+//         text_pm.value++
+//       }
+//     })
+//   }
+// }
+// if (minus) {
+//   for (let index = 0; index < minus.length; index++) {
+//     const element = minus[index]
+//     element.addEventListener('click', () => {
+//       if (text_pm.value > 0) {
+//         text_pm.value--
+//       }
+//     })
+//   }
+// } 

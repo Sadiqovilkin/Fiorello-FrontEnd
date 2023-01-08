@@ -1553,6 +1553,25 @@ header .navbaractive {
   border-radius: 0;
 }
 
+#pageheader {
+  padding: 55px 0;
+  background-color: #fafaf9;
+}
+#pageheader .list_header h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 1.32em;
+}
+#pageheader .list_header p {
+  font-family: "Lora", serif;
+  font-size: 17px;
+  font-style: italic;
+  text-transform: none;
+  letter-spacing: 0;
+  color: #6D6a6A;
+}
+
 #back_to_top button {
   display: flex;
   justify-content: center;
