@@ -1,0 +1,83 @@
+#contact_banner{
+    padding: 100px 0;
+     
+        .banner_items{
+            background-color: #f8f8f8;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 5% 0;
+            .item_txt{
+                padding: 20px 0;
+                text-align: center;
+             
+h3{
+    font-size: 38px;
+    line-height: 1.447em;
+    font-family: $font-Playfair;
+    font-weight: 400;
+    color: $black-txtcolor;
+    span{
+        color: $orange-bgcolor;
+     
+    }
+  
+}
+p{
+    font-size: 18px;
+    margin: 29px 0;
+    line-height: 1.6em;
+    font-family: $font-Lora;
+    color: $gray-txtcolor;
+
+}
+            }
+        }
+        .contact_form{ 
+            padding: 30px 0 0;
+            h2{
+
+            }
+            p{
+
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                input{
+                    width: 100%;
+                    padding:19px ;
+                    color: #959595;
+                    font-size: 12px;
+                    background-color: #fff;
+                   border: 1px solid #e8e8e8;
+                    outline: none;
+                }
+                textarea{
+                    resize: none;
+                    width: 100%;
+                    height: 130px;
+                    padding:19px ;
+                    color: #959595;
+                    font-size: 12px;
+                    background-color: #fff;
+                   border: 1px solid #e8e8e8;
+                    outline: none;
+                }
+                button{
+@include _main($cursor:pointer,$width:40%,$height:60px,$f_size:12px,$f_weight:500,$color:$white-color,$back-color:$orange-bgcolor);
+    outline: 0;
+    font-family: $font-Mont;
+    line-height: 1.833em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    padding: 13px 42px;
+    border: 1px solid transparent;
+    border-radius: 0;
+                }
+            }
+        }
+
+}

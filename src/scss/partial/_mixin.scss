@@ -20,7 +20,9 @@
   $font_s: null,
   $display: null,
   $align_it: null,
-  $just_content: null
+  $just_content: null,
+  $flex_direc:null,
+  $f_weight:null,
 ) {
   width: $width;
   height: $height;
@@ -29,7 +31,10 @@
   position: $position;
   top: $top;
   left: $left;
+  right: $right;
+  bottom: $bottom;
   font-size: $f_size;
+font-weight: $f_weight;
   color: $color;
   cursor: $cursor;
   border: $border;
@@ -37,11 +42,10 @@
   text-align: $text-align;
   background-color: $back-color;
   object-fit: $object_f;
-  right: $right;
-  bottom: $bottom;
   background: $background;
   font-size: $font_s;
   display: $display;
   justify-content: $just_content;
   align-items: $align_it;
+  flex-direction: $flex_direc;
 }
