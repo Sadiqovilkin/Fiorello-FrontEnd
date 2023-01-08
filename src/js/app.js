@@ -68,6 +68,7 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 
+
 // add to cart
 const CardData=[
     {
