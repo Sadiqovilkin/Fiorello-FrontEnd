@@ -54,7 +54,7 @@
                     </div>
                   </li>
                   <li id="pages">
-                    <a id="navbtnactive" href="#">PAGES</a>
+                    <a  href="#">PAGES</a>
                     <div id="list_hover">
                       <ul>
                         <li><a href="#">About Us</a></li>
@@ -64,14 +64,14 @@
                     </div>
                   </li>
                   <li id="shop">
-                    <a href="#">SHOP</a>
+                    <a id="navbtnactive" href="#">SHOP</a>
                     <div id="list_hover">
                       <div class="container">
                         <div class="row">
                           <div class="col-lg-3">
                             <ul>
                               <p>Product Types</p>
-                              <li><a href="#">Standard Product</a></li>
+                              <li><a href="./productlist.html">Standard Product</a></li>
                               <li><a href="#">Grouped Product</a></li>
                               <li><a href="#">Variable Product</a></li>
                               <li><a href="#">Virtual Product</a></li>
@@ -362,12 +362,14 @@
         </div>
     </section>
     <section id="list_card">
-<div class="container">
+<div class="container my-5">
     <div class="row">
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-md-12 g-5">
             <div class="cards_tips">
                 <div id="myBtnContainer">
-                    <h4>Categories</h4>
+                    <h4  onclick="filterSelection('all')">Categories</h4>
+                    
+
                     <button class="btn" onclick="filterSelection('cactuses')"> Cactuses</button>
                     <button class="btn" onclick="filterSelection('exotic')"> Exotic</button>
                     <button class="btn" onclick="filterSelection('greens')"> Greens</button>
@@ -375,10 +377,48 @@
                     <button class="btn" onclick="filterSelection('various')"> Various</button>
                     <button class="btn" onclick="filterSelection('winter')"> Winter</button>
                   </div>
+                  <div class="mini_card">
+                    <h6>RECENTLY VIEWED PRODUCTS</h6>
+                    <div class="cards">
+                        <div class="card_img">
+                            <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/shop-2-img-300x400.jpg" alt="">
+                        </div>
+                        <div class="card_content">
+
+                            <h4>ORANGE AMARYLLIS
+                               </h4>
+                                <p> $259</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="price">
+                    <h5>price</h5>
+                    <span class="multi-range">
+                        <input type="range" min="150" max="350" value="175" id="lower">
+                        <input type="range" min="150" max="350" value="300" id="upper">
+                    </span>
+                    <div class="value">
+                        <p>Price:$<span id="range_minvalue">175</span>---$ <span id="range_maxvalue">300</span></p>
+                        <h6>filter</h6>
+                    </div>
+                  </div>
             </div>
             
         </div>
-        <div class="col-lg-9"></div>
+        <div class="col-lg-9 col-md-12 g-5">
+            <div class="list_sort">
+                <p>Showing 1–9 of 14 results</p>
+                <select name="" id="">
+                    <option value="">Sort By popularity</option>
+                    <option value="">Sort By latest</option>
+                    <option value="">Sort By price:low to high</option>
+                    <option value="">Sort By price:high to low</option>
+                </select>
+            </div>
+            <div class="row product_list_cards">
+
+            </div>
+        </div>
     </div>
 </div>
     </section>
@@ -502,6 +542,7 @@
       src="https://cdn.jsdelivr.net/npm/toastify-js"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../src/js/products.js"></script>
     <script src="../src/js/app.js"></script>
   </body>
 </html>

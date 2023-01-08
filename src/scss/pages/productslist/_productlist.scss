@@ -20,5 +20,276 @@
     }
 }
 #list_card{
-    
+    .cards_tips{
+        padding: 0px 0px 50px;
+        #myBtnContainer{
+            display: flex;
+            flex-direction: column;
+            h4{
+                color: $black-color;
+    font-family: $font-Mont;
+    font-size: 12px;
+    line-height: 2em;
+    font-weight: 500;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+cursor: pointer;
+            }
+            button{
+                font-size: 12px;
+    color: $footer-lightcolor;
+text-align: left;
+padding: 4px 0;
+            }
+        }
+        .mini_card{
+            margin-top: 40px;
+            h6{
+                color: $black-color;
+                font-family: $font-Mont;
+                font-size: 13px;
+                line-height: 3em;
+                font-weight: 500;
+                letter-spacing: .2em;
+                text-transform: uppercase;
+            }
+            .cards{
+                display: flex;
+                .card_img{
+                    img{
+                        width: 50px;
+                        height: 66px;
+                        object-fit: contain;
+                        object-position: center;
+                    }
+                }
+                .card_content{
+                    padding: 10px ;
+                    h4{
+                        color: #1b1b1b;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: 500;
+    font-size: 12px;
+}
+p{
+    font-size: 12px;
+    color: $lightgray-txtcolor;
+}
+                    
+                }
+            }
+        }
+        .price{
+            h5{
+                color: $black-color;
+                font-family: $font-Mont;
+                font-size: 13px;
+                line-height: 3em;
+                font-weight: 500;
+                letter-spacing: .2em;
+                text-transform: uppercase;
+            } 
+             input[type=range] {
+                box-sizing: border-box;
+                appearance: none;
+                width: 200px;
+                margin: 0;
+                padding: 0 2px;
+                /* Add some L/R padding to ensure box shadow of handle is shown */
+                overflow: hidden;
+                border: 0;
+                border-radius: 1px;
+                outline: none;
+                background: linear-gradient(grey, grey) no-repeat center;
+                /* Use a linear gradient to generate only the 2px height background */
+                background-size: 100% 2px;
+                pointer-events: none;
+             @media (max-width:1000px) {
+                width: 700px;
+                
+             }
+             @media (max-width:768px) {
+                width: 500px;
+                
+             }
+             @media (max-width:538px) {
+                width: 400px;
+                
+             }
+             @media (max-width:414px) {
+                width: 200px;
+                
+             }
+                &:active,
+                &:focus {
+                   outline: none;
+                }
+             
+                &::-webkit-slider-thumb {
+                   height: 10px;
+                   width: 10px;
+                   border-radius: 28px;
+                   background-color: $black-color;
+                   position: relative;
+                   margin: 5px 0;
+                   /* Add some margin to ensure box shadow is shown */
+                   cursor: pointer;
+                   appearance: none;
+                   pointer-events: all;
+                   box-shadow: 0 1px 4px 0.5px rgba(0, 0, 0, 0.25);
+                   &::before {
+                         content: ' ';
+                         display: block;
+                         position: absolute;
+                         top: 13px;
+                         left: 100%;
+                         width: 2000px;
+                         height: 2px;
+                   }
+                }
+             }
+             
+             .multi-range {
+                position: relative;
+                height: 50px;
+             
+                input[type=range] {
+                   position: absolute;
+                   
+                   &:nth-child(1) {
+                      &::-webkit-slider-thumb::before {
+                         background-color: red;
+                      }
+                   }
+             
+                   &:nth-child(2) {
+                      background: none;
+             
+                      &::-webkit-slider-thumb::before {
+                          background-color: grey; 
+                      }
+                   }
+                }
+             }
+             .value{
+                margin-top: 50px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                p{
+                    font-size: 12px;
+                    font-family: $font-Lora;
+                    color: $lightgray-txtcolor;
+                    margin: 0;
+                    line-height: 1.833em;
+                    letter-spacing: .1em;
+                    font-weight: 500;
+                }
+                h6{
+                    font-size: 12px;
+    font-family: $font-Mont;
+    line-height: 1.833em;
+    letter-spacing: .1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #1b1b1b;
+                }
+             }
+        }
+    }
+    .list_sort{
+        display: flex;
+        justify-content: space-between;
+        p{
+            font-size: 12px;
+            font-family:$font-Mont;
+            line-height: 44px;
+            color: #8b8b8b;
+        }
+        select{
+            height: 40px;
+            padding: 5px 20px;
+    color: #999;
+    line-height: 42px;
+    font-family:$font-Mont;
+    font-weight: 400;
+    font-size: 12px;
+    border: 1px solid #e8e8e8;
+    outline: none;
+    cursor: pointer;
+    box-shadow: none;
+    option{
+        font-size: 12px;
+        box-shadow: none;
+        outline: none;
+        border: none;
+        padding: 15px 5px;
+    }
+        }
+    }
+    .product_list_cards{
+        .column {
+            display: none;
+            .content {
+              text-align: center;
+              background-color: white;
+              padding: 10px;
+              &:hover {
+                .card_price {
+                  #price {
+                    transform: translateX(0px);
+                    opacity: 0;
+                  }
+                  #addcart {
+                    transform: translateX(10px);
+                    opacity: 1;
+                  }
+                }
+              }
+              img {
+                width: 100%;
+                height: 320px;
+                object-fit: cover;
+                object-position: center;
+                transition: 0.3s ease-in-out;
+                &:hover {
+                  transform: scale(1.03);
+                }
+              }
+              h4 {
+                font-size: 12px;
+                color: $black-txtcolor;
+                font-family: $font-Mont;
+                margin-top: 20px;
+              }
+              .card_price {
+                display: flex;
+                justify-content: center;
+                #price {
+                  color: $lightgray-txtcolor;
+                  font-size: 12px;
+                  font-family: $font-Mont;
+                  transition: 0.2s ease-in-out;
+                  transform: translateX(-35px);
+                }
+                #addcart {
+                  transition: 0.2s ease-in-out;
+                  opacity: 0;
+                  transform: translateX(-50px);
+                  color: $lightgray-txtcolor;
+                  font-size: 12px;
+                  font-family: $font-Mont;
+                  cursor: pointer;
+                  &:hover {
+                    color: $orange-color;
+                  }
+                }
+              }
+            }
+          }
+          .show {
+            display: block;
+          }
+    }
 }

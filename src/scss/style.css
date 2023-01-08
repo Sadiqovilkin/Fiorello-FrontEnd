@@ -676,12 +676,12 @@ header #nav1 .navbar #cart_add .carts {
   background-color: #fff;
   z-index: 999;
   position: absolute;
-  top: 75px;
+  top: 25px;
   left: -80px;
   display: none;
   flex-direction: column;
   width: 250px;
-  padding: 10px;
+  padding: 50px 10px 10px;
 }
 header #nav1 .navbar #cart_add .carts .cart-item {
   width: 100%;
@@ -1570,6 +1570,270 @@ header .navbaractive {
   text-transform: none;
   letter-spacing: 0;
   color: #6D6a6A;
+}
+
+#list_card .cards_tips {
+  padding: 0px 0px 50px;
+}
+#list_card .cards_tips #myBtnContainer {
+  display: flex;
+  flex-direction: column;
+}
+#list_card .cards_tips #myBtnContainer h4 {
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  line-height: 2em;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+#list_card .cards_tips #myBtnContainer button {
+  font-size: 12px;
+  color: #8B8B8B;
+  text-align: left;
+  padding: 4px 0;
+}
+#list_card .cards_tips .mini_card {
+  margin-top: 40px;
+}
+#list_card .cards_tips .mini_card h6 {
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  line-height: 3em;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+#list_card .cards_tips .mini_card .cards {
+  display: flex;
+}
+#list_card .cards_tips .mini_card .cards .card_img img {
+  width: 50px;
+  height: 66px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+#list_card .cards_tips .mini_card .cards .card_content {
+  padding: 10px;
+}
+#list_card .cards_tips .mini_card .cards .card_content h4 {
+  color: #1b1b1b;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  font-size: 12px;
+}
+#list_card .cards_tips .mini_card .cards .card_content p {
+  font-size: 12px;
+  color: #AFAFAF;
+}
+#list_card .cards_tips .price h5 {
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  line-height: 3em;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+#list_card .cards_tips .price input[type=range] {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 200px;
+  margin: 0;
+  padding: 0 2px;
+  /* Add some L/R padding to ensure box shadow of handle is shown */
+  overflow: hidden;
+  border: 0;
+  border-radius: 1px;
+  outline: none;
+  background: linear-gradient(grey, grey) no-repeat center;
+  /* Use a linear gradient to generate only the 2px height background */
+  background-size: 100% 2px;
+  pointer-events: none;
+}
+@media (max-width: 1000px) {
+  #list_card .cards_tips .price input[type=range] {
+    width: 700px;
+  }
+}
+@media (max-width: 768px) {
+  #list_card .cards_tips .price input[type=range] {
+    width: 500px;
+  }
+}
+@media (max-width: 538px) {
+  #list_card .cards_tips .price input[type=range] {
+    width: 400px;
+  }
+}
+@media (max-width: 414px) {
+  #list_card .cards_tips .price input[type=range] {
+    width: 200px;
+  }
+}
+#list_card .cards_tips .price input[type=range]:active, #list_card .cards_tips .price input[type=range]:focus {
+  outline: none;
+}
+#list_card .cards_tips .price input[type=range]::-webkit-slider-thumb {
+  height: 10px;
+  width: 10px;
+  border-radius: 28px;
+  background-color: #000000;
+  position: relative;
+  margin: 5px 0;
+  /* Add some margin to ensure box shadow is shown */
+  cursor: pointer;
+  -webkit-appearance: none;
+          appearance: none;
+  pointer-events: all;
+  box-shadow: 0 1px 4px 0.5px rgba(0, 0, 0, 0.25);
+}
+#list_card .cards_tips .price input[type=range]::-webkit-slider-thumb::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 13px;
+  left: 100%;
+  width: 2000px;
+  height: 2px;
+}
+#list_card .cards_tips .price .multi-range {
+  position: relative;
+  height: 50px;
+}
+#list_card .cards_tips .price .multi-range input[type=range] {
+  position: absolute;
+}
+#list_card .cards_tips .price .multi-range input[type=range]:nth-child(1)::-webkit-slider-thumb::before {
+  background-color: red;
+}
+#list_card .cards_tips .price .multi-range input[type=range]:nth-child(2) {
+  background: none;
+}
+#list_card .cards_tips .price .multi-range input[type=range]:nth-child(2)::-webkit-slider-thumb::before {
+  background-color: grey;
+}
+#list_card .cards_tips .price .value {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#list_card .cards_tips .price .value p {
+  font-size: 12px;
+  font-family: "Lora", serif;
+  color: #AFAFAF;
+  margin: 0;
+  line-height: 1.833em;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+}
+#list_card .cards_tips .price .value h6 {
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.833em;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #1b1b1b;
+}
+#list_card .list_sort {
+  display: flex;
+  justify-content: space-between;
+}
+#list_card .list_sort p {
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 44px;
+  color: #8b8b8b;
+}
+#list_card .list_sort select {
+  height: 40px;
+  padding: 5px 20px;
+  color: #999;
+  line-height: 42px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  border: 1px solid #e8e8e8;
+  outline: none;
+  cursor: pointer;
+  box-shadow: none;
+}
+#list_card .list_sort select option {
+  font-size: 12px;
+  box-shadow: none;
+  outline: none;
+  border: none;
+  padding: 15px 5px;
+}
+#list_card .product_list_cards .column {
+  display: none;
+}
+#list_card .product_list_cards .column .content {
+  text-align: center;
+  background-color: white;
+  padding: 10px;
+}
+#list_card .product_list_cards .column .content:hover .card_price #price {
+  transform: translateX(0px);
+  opacity: 0;
+}
+#list_card .product_list_cards .column .content:hover .card_price #addcart {
+  transform: translateX(10px);
+  opacity: 1;
+}
+#list_card .product_list_cards .column .content img {
+  width: 100%;
+  height: 320px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  transition: 0.3s ease-in-out;
+}
+#list_card .product_list_cards .column .content img:hover {
+  transform: scale(1.03);
+}
+#list_card .product_list_cards .column .content h4 {
+  font-size: 12px;
+  color: #1B1B1B;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 20px;
+}
+#list_card .product_list_cards .column .content .card_price {
+  display: flex;
+  justify-content: center;
+}
+#list_card .product_list_cards .column .content .card_price #price {
+  color: #AFAFAF;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  transition: 0.2s ease-in-out;
+  transform: translateX(-35px);
+}
+#list_card .product_list_cards .column .content .card_price #addcart {
+  transition: 0.2s ease-in-out;
+  opacity: 0;
+  transform: translateX(-50px);
+  color: #AFAFAF;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+}
+#list_card .product_list_cards .column .content .card_price #addcart:hover {
+  color: #FF0000;
+}
+#list_card .product_list_cards .show {
+  display: block;
 }
 
 #back_to_top button {

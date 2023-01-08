@@ -139,6 +139,7 @@ const CardData=[
     const Card=document.querySelector(".add_card")
     function ProductRender() {
         CardData.map((products)=>{
+           if (Card) {
             Card.innerHTML +=`
             <div class="column show col-lg-3 col-md-6 ${products.ClassAdd}">
             <div class="content">
@@ -151,7 +152,8 @@ const CardData=[
               </div>
             </div>
           </div>
-            `	
+            `	 
+           }      
         })
         
     }
