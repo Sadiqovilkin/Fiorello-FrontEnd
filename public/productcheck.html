@@ -376,8 +376,180 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-6"></div>
+        <div class="col-lg-6">
+          <div class="check_addtocart">
+            <div class="content">
+              <h3>Orange Amaryllis</h3>
+              <span>$259</span>
+            </div>
+            <div class="info_add">
+              <p>
+                Class aptent taciti sociosqu ad litora torquent per conubia
+                nostra, per inceptos himenaeos. Mauris in erat justo. Nullam
+                ac urna eu felis dapibus condimentum sit amet a augue. Sed
+                non neque elit. Sed ut imperdiet nisi. Proin condimentum
+                fermentum nunc.
+              </p>
+              <form action="">
+                <input
+                  id="quantity"
+                  type="text"
+                  readonly
+                  placeholder="Quantity"
+                />
+                <button type="button" id="minus" name="minus">-</button>
+                <input
+                  type="text"
+                  id="value"
+                  value="1"
+                  min="1"
+                  step="1"
+                
+                />
+                <button type="button" id="plus" name="plus">+</button>
+                <button id="add_car_info" onclick="addToCart(5)">ADD TO CART</button>
+              </form>
+            </div>
+
+            <div class="list_about">
+              <ul>
+                <li><strong>SKU:</strong> 989873</li>
+                <li><strong>Categories:</strong> Exotic, Various</li>
+                <li><strong>Tags:</strong> Llilies, Orchids</li>
+              </ul>
+            </div>
+          </div>
+        </div>
     </div>
+</div>
+    </section>
+
+    <section id="elementor">\
+    <div class="container">
+      <div class="header">
+        <a class="filterbtn filter_btnactive" id="1">Desciription</a>
+        <a class="filterbtn" id="2">Additional Information</a>
+        <a class="filterbtn" id="3">Revievs(2)</a>
+        
+      </div>
+    </div>
+      <div class="container-fluid">
+
+        
+        <div class="row mt-0 border-top border-bottom">
+
+          <div class="col-lg-12  filter_items " data-id="1" data-type="elec">
+            <div class="describtion_filter">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h2>The power of flowers</h2>
+                    <p>
+                      Aliquam lorem ante, dapibus in, viverra quis, feugiat a,
+                      tellus. Phasellus viverra nulla ut metus varius laoreet.
+                      Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
+                      augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.
+                      Etiam rhoncus. Maecenas tempus, tellus eget condimentum
+                      rhoncus, sem quam semper libero, sit amet adipiscing sem neque
+                      sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar,
+                      hendrerit id, lorem. Maecenas nec odio et ante
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12 filter_items" data-id="2" data-type="fash">
+            <div class="add_info">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="first_state">
+                      <p>Weight:</p>
+                      <span>1 kg</span>
+                    </div>
+                    <div class="first_state">
+                      <p>Dimensions:</p>
+                      <span>30 × 30 × 50 cm</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12 filter_items" data-id="3" data-type="furni">
+            <div class="reviews">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h3>Reviews</h3>
+                    <div class="reviewers">
+                      <div class="left_side">
+                        <img
+                          src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/user-img-1-100x100.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="right_side">
+                        <div class="up_right_side">
+                          <p>JOSHUA GARCIA</p>
+                          <span>27.04.2018</span>
+                        </div>
+                        <div class="down_right_side">
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit. Aenean commodo ligula eget dolor. Aenean massa.
+                            Cum sociis Theme natoque penatibus et magnis dis
+                            parturient montes, nascetur ridiculus mus.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="reviewers">
+                      <div class="left_side">
+                        <img
+                          src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/user-img-2-100x100.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="right_side">
+                        <div class="up_right_side">
+                          <p>JOSHUA GARCIA</p>
+                          <span>27.04.2018</span>
+                        </div>
+                        <div class="down_right_side">
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit. Aenean commodo ligula eget dolor. Aenean massa.
+                            Cum sociis Theme natoque penatibus et magnis dis
+                            parturient montes, nascetur ridiculus mus.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <h3>Add a review</h3>
+                    <label for="">Your review *</label>
+                    <textarea id="review_write" cols="30" rows="7"></textarea>
+                    <label for="">Name *</label>
+                    <input type="text" />
+                    <label for="">Email *</label>
+                    <input type="text" />
+                    <button id="sub_btn">SUBMIT</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section id="product_cards">
+<div class="container">
+  <h4>RELATED PRODUCTS</h4>
+  <div class="row product_cards">
+   
+  </div>
 </div>
     </section>
   </main>
