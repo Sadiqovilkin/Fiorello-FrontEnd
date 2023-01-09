@@ -97,6 +97,7 @@ const CardmockData=[
 
   ProductlistRender()
 
+  
   var lowerSlider = document.querySelector('#lower'),
    upperSlider = document.querySelector('#upper'),
    lowerVal = parseInt(lowerSlider.value);
