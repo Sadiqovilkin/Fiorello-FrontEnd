@@ -49,3 +49,12 @@ font-weight: $f_weight;
   align-items: $align_it;
   flex-direction: $flex_direc;
 }
+%productcheckh6{
+  color: $black-color;
+                font-family: $font-Mont;
+                font-size: 13px;
+                line-height: 3em;
+                font-weight: 500;
+                letter-spacing: .2em;
+                text-transform: uppercase;
+}
