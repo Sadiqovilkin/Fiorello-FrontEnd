@@ -45,11 +45,9 @@ padding: 4px 0;
         .mini_card{
             margin-top: 40px;
             h6{
-                color: $black-color;
+              @include _main($color:$black-color,$f_size:13px,$f_weight:500);
                 font-family: $font-Mont;
-                font-size: 13px;
                 line-height: 3em;
-                font-weight: 500;
                 letter-spacing: .2em;
                 text-transform: uppercase;
             }
