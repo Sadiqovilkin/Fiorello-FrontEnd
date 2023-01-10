@@ -1,0 +1,547 @@
+header{
+    #nav1 {
+        transition: .5s ease-in-out;
+        z-index: 10;
+        position: relative;
+        background-color: #fff;
+        .logo{
+            @include _main($height:115px , $width:100% , $display:flex , $align_it:center);
+            img{
+                @include _main($height:25px , $width:100% , $object_f:contain , $cursor:pointer);
+            }
+        }
+        .navbar{
+            @media (max-width:1024px) {
+                display: none; 
+            }
+            @include _main( $display:flex , $align_it:center , $height:100% , $just_content:end);
+       ul{
+            @include _main( $display:flex , $align_it:center , $margin:0px , $padding:0px);
+            flex-direction: row;
+            gap: 20px;
+            list-style-type: none;
+            li{
+                list-style: none;
+                margin-right: 20px;
+                a{
+                    @include _main($position:relative , $f_size:14px , $color:$black-txtcolor , $padding:45px 3px);
+                    text-decoration: none;
+                    display: block;  
+                    font-family: $font-Mont;
+                    &::before{
+                    @include _main($position:absolute , $top:65px , $left:0px , $back-color:$black-color , $width:0% , $height:1px);
+                    content: '';
+                    transition: .3s ease-in-out;
+                    }   
+                    &:hover{
+                        &::before{
+                            @include _main($position:absolute , $top:65px , $left:0px , $back-color:$black-color , $width:100% , $height:1px);
+                            content: '';
+                            }   
+                    }      
+                }      
+            }
+            
+            #search_click{ 
+                position: relative;
+                cursor: pointer;
+                &:hover{
+                    color: $orange-bgcolor;
+                }
+                .search{    
+                    transition: .3s all;
+                     overflow: hidden;
+                    opacity: 0;
+                    @include _main($position:absolute , $height:0px , $top:67px , $left:-273px , $display:flex , $width:300px);
+                    form{
+                        @include _main($display:flex , $align_it:center , $width:292px);
+                          input{
+                        @include _main($width:120%, $padding: 12px, $border:1px solid transparent , $back-color:$white-color);
+                        outline: none;
+                        font-size: 14px;
+                    }
+                    button{
+                        @include _main($margin: 0 0 0 -5px ,$padding: 12px, $border:1px solid transparent , $back-color:$white-color);
+                        outline: none;
+                        font-size: 14px;      
+                    }  
+                    }
+                }
+           .active {
+                        overflow: hidden;
+                        height: 60px;
+                        opacity: 1;
+                    }
+            }   
+            #home{
+                position: relative; 
+                a{
+                    &::before{
+                    @include _main($position:absolute , $top:70px , $left:0px , $back-color:black , $width:100% , $height:1px);
+                    content: '';
+                    }   
+                }
+                #list_hover{
+                    overflow: hidden;
+                    opacity: 0;
+                    transition: .3s ease-in-out;
+                    @include _main( $height:0px , $back-color:white , $width:448% ,  $position:absolute , $top:113px , $left:-25px ,$display:flex , $align_it:center , $margin:0px , $padding:0px );
+                    list-style-type: none;
+                    ul{
+                        @include _main($width:100% , $display:flex , $align_it:baseline , $margin:0px , $padding: 37px 10px 30px 20px );
+                        flex-direction: column;
+                        gap: 15px;
+                        list-style-type: none; 
+                        li{
+                            a{
+                                @include _main($position:relative , $f_size:14px , $color:$black-txtcolor , $padding:3px);
+                                text-decoration: none;
+                                display: block;  
+                                &::before{
+                                @include _main($position:absolute , $top:22px , $left:0px , $back-color:black , $width:0% , $height:1px);
+                                content: '';
+                                transition: .3s ease-in-out;
+                                }   
+                                &:hover{
+                                    &::before{
+                                        @include _main($position:absolute , $top:22px , $left:0px , $back-color:black , $width:100% , $height:1px);
+                                        content: '';
+                                        }   
+                                }
+                            }      
+                        }
+                    }
+                }
+            &:hover #list_hover{
+                @include _main($height:300px , $back-color:white );
+                overflow: hidden;
+                opacity: 1;
+            }
+            }
+            #pages{
+                position: relative; 
+                #list_hover{
+                    overflow: hidden;
+                    opacity: 0;
+                    transition: .3s ease-in-out;
+                    @include _main($height:0px , $back-color:white, $width:448%, $position:absolute , $top:113px , $left:-25px ,$display:flex , $align_it:center , $margin:0px , $padding:0px );
+                    list-style-type: none;
+                    ul{
+                        @include _main($width:100% , $display:flex , $align_it:baseline , $margin:0px , $padding: 37px 10px 30px 20px );
+                        flex-direction: column;
+                        gap: 15px;
+                        list-style-type: none; 
+                        li{
+                            cursor: pointer;
+                            a{
+                                @include _main($position:relative , $f_size:14px , $color:$black-txtcolor , $padding:3px);
+                                text-decoration: none;
+                                display: block;  
+                                &::before{
+                                @include _main($position:absolute , $top:22px , $left:0px , $back-color:black , $width:0% , $height:1px);
+                                content: '';
+                                transition: .3s ease-in-out;
+                                }   
+                                &:hover{
+                                    &::before{
+                                        @include _main($position:absolute , $top:22px , $left:0px , $back-color:black , $width:100% , $height:1px);
+                                        content: '';
+                                        }   
+                                }
+                            }      
+                        }
+                    }
+                }
+            &:hover #list_hover{
+                overflow: hidden;
+                opacity: 1;
+                @include _main($height:130px , $back-color:white);
+            }
+            }
+            #shop{
+                position: relative; 
+                #list_hover{
+                    overflow: hidden;
+                    opacity: 0;
+                    transition: .3s ease-in-out;
+                    @include _main($height:0px , $back-color:white , $width:1255px , $position:absolute , $top:113px , $left:-673px ,$display:flex , $align_it:center , $margin:0px , $padding:0px );
+                    list-style-type: none;
+                    ul{
+                        @include _main($width:100% , $display:flex , $align_it:baseline , $margin:0px , $padding: 37px 10px 30px 20px );
+                        flex-direction: column;
+                        gap: 15px;
+                        list-style-type: none; 
+                        li{
+                            line-height: 25px;
+                            cursor: pointer;
+                            a{
+                                @include _main($position:relative , $f_size:14px , $color:$black-txtcolor , $padding:3px);
+                                text-decoration: none;
+                                display: block;  
+                                &::before{
+                                @include _main($position:absolute , $top:22px , $left:0px , $back-color:black , $width:0% , $height:1px);
+                                content: '';
+                                transition: .3s ease-in-out;
+                                }   
+                        
+                            }    
+                            &:hover a{
+                                &::before{
+                                    @include _main($position:absolute , $top:22px , $left:0px , $back-color:black , $width:100% , $height:1px);
+                                    content: '';
+                                    }   
+                            }  
+                        }
+                    }
+                }
+            &:hover #list_hover{
+                overflow: hidden;
+                opacity: 1;
+                @include _main($height:450px , $back-color:white );
+            }
+            p{
+                @include _main($font_s:16px , $color:$black-color, $margin:10px 0 , $text-align:center);
+                font-weight: 600;
+            }
+            }
+            #portfolio{
+                position: relative; 
+                #list_hover{
+                    overflow: hidden;
+                    opacity: 0;
+                    transition: .3s ease-in-out;
+                    @include _main($height:0px , $back-color:white, $width:258%, $position:absolute , $top:113px , $left:-25px ,$display:flex , $align_it:center , $margin:0px , $padding:0px );
+                    list-style-type: none;
+                    ul{
+                        @include _main($width:100% , $display:flex , $align_it:baseline , $margin:0px , $padding: 37px 10px 30px 20px );
+                        flex-direction: column;
+                        gap: 15px;
+                        list-style-type: none; 
+                        li{   
+                            cursor: pointer;
+                            a{
+                                @include _main($position:relative , $f_size:14px , $color:$black-txtcolor , $padding:3px);
+                                text-decoration: none;
+                                display: block;  
+                                &::before{
+                                @include _main($position:absolute , $top:22px , $left:0px , $back-color:black , $width:0% , $height:1px);
+                                content: '';
+                                transition: .3s ease-in-out;
+                                }   
+          
+                            }   
+                            &:hover a{
+                                &::before{
+                                    @include _main($position:absolute , $top:22px , $left:0px , $back-color:black , $width:100% , $height:1px);
+                                    content: '';
+                                    }   
+                            }   
+                        }
+                        #port_lay{
+                            @include _main($position:relative , $display:flex , $align_it:center , $just_content:space-between , $width:100%);
+                            .bi-chevron-right{
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            &:hover #list_hover{
+              overflow: hidden;
+                opacity: 1;
+                @include _main($height:230px , $back-color:white);
+            }
+                      
+        }
+        #blog{
+            position: relative; 
+            #list_hover{
+                overflow: hidden;
+                opacity: 0;
+                transition: .3s ease-in-out;
+                @include _main($height:0px , $back-color:white, $width:420%, $position:absolute , $top:113px , $left:-25px ,$display:flex , $align_it:center , $margin:0px , $padding:0px );
+                list-style-type: none;
+                ul{
+                    @include _main($width:100% , $display:flex , $align_it:baseline , $margin:0px , $padding: 37px 10px 30px 20px );
+                    flex-direction: column;
+                    gap: 15px;
+                    list-style-type: none; 
+                    li{   
+                        cursor: pointer;
+                        a{
+                            @include _main($position:relative , $f_size:14px , $color:$black-txtcolor , $padding:3px);
+                            text-decoration: none;
+                            display: block;  
+                            &::before{
+                            @include _main($position:absolute , $top:22px , $left:0px , $back-color:black , $width:0% , $height:1px);
+                            content: '';
+                            transition: .3s ease-in-out;
+                            }   
+                       
+                        } 
+                        &:hover a{
+                            &::before{
+                                @include _main($position:absolute , $top:22px , $left:0px , $back-color:black , $width:100% , $height:1px);
+                                content: '';
+                                }   
+                        }     
+                    }
+                    #port_lay{
+                        @include _main($position:relative , $display:flex , $align_it:center , $just_content:space-between , $width:100%);
+                        .bi-chevron-right{
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        &:hover #list_hover{
+          overflow: hidden;
+            opacity: 1;
+            @include _main($height:130px , $back-color:white);
+        }
+    }
+            #elements{
+                position: relative; 
+                #list_hover{
+                    overflow: hidden;
+                    opacity: 0;
+                    transition: .3s ease-in-out;
+                    @include _main($height:0px , $back-color:white, $width:258%, $position:absolute , $top:113px , $left:-25px ,$display:flex , $align_it:center , $margin:0px , $padding:0px );
+                    list-style-type: none;
+                    ul{
+                        @include _main($width:100% , $display:flex , $align_it:baseline , $margin:0px , $padding: 37px 10px 30px 20px );
+                        flex-direction: column;
+                        gap: 15px;
+                        list-style-type: none; 
+                        li{  
+                            cursor: pointer; 
+                            a{
+                                @include _main($position:relative , $f_size:14px , $color:$black-txtcolor , $padding:3px);
+                                text-decoration: none;
+                                display: block;  
+                                &::before{
+                                @include _main($position:absolute , $top:22px , $left:0px , $back-color:black , $width:0% , $height:1px);
+                                content: '';
+                                transition: .3s ease-in-out;
+                                }   
+                            }  
+                            &:hover a{
+                                &::before{
+                                    @include _main($position:absolute , $top:22px , $left:0px , $back-color:black , $width:100% , $height:1px);
+                                    content: '';
+                                    }   
+                            }    
+                        }
+                        #port_lay{
+                            @include _main($position:relative , $display:flex , $align_it:center , $just_content:space-between , $width:100%);
+                            .bi-chevron-left{
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            &:hover #list_hover{
+              overflow: hidden;
+                opacity: 1;
+                @include _main($height:178px , $back-color:white);
+            }
+        }
+        }    
+        #cart_add{
+            @include _main( $display:flex , $align_it:center , $cursor:pointer , $margin:0px 0px 0px 20px );
+            gap:10px;
+             font-weight: 500;  
+             position: relative;
+            p{
+                @include _main($margin:0px , $padding:0px , $font_s:14px);
+            }
+            .total_item{
+                position: absolute;
+                top: -1px;
+                left: 11px;
+                width: 13px;
+                height: 13px;
+                background-color: $orange-bgcolor;
+                font-size: 8px;
+                color: #fff;
+                font-weight: 600;
+                line-height: 1.5em;
+                border-radius: 50%;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+    
+            }
+            &:hover{
+                .carts{
+                    display: block;
+                }
+            }
+            .carts {
+    
+                background-color: $white-color;
+                z-index: 999;
+                position: absolute;
+                top: 75px;
+                left: -80px;
+                display: none;
+                flex-direction: column;
+                width: 250px;
+                padding: 10px;
+                .cart-item{
+                    width: 100%;
+                   margin: 5px 0;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                   
+                    .item-info{
+                      
+                        width: 100%;
+                        display: flex;
+                       .item_img{
+                        width: 30%;
+                        img{
+                            width: 50px;
+                            height: 70px;
+                            object-fit: cover;
+                        }
+                       }
+                       .item_desc{
+                        h4{
+                            font-size: 12px;
+                            font-family: $font-Mont;
+                            color: $black-txtcolor;
+                        }
+                        .unit-price{
+                            span{
+                                font-size: 12px;
+                                font-family: $font-Mont;
+                                color: $lightgray-txtcolor;
+                            }
+                        }
+                       }
+                       
+                    }
+
+                }
+                .subtotal {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 10px 0px;
+                    background-color: white;
+                    font-size: 14px;
+                    width: 100%;
+                    color: $black-second-txtcolor;
+                  }
+                .cart_footer {
+                  width: 100%;
+                  display: flex;
+                  justify-content: space-evenly;
+    
+                  button{
+                    width: 45%;
+                    height: 40px;
+                    border: none;
+        line-height: 40px;
+        padding: 0 18px;
+        font-size: 9px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        color: #fff;
+        background-color: $orange-bgcolor;
+        text-align: center;
+        cursor: pointer;
+                  }
+                  #black{
+                    background-color: $black-color;
+                  }
+    
+                
+                }
+              }
+        }
+    }
+    .mobile_navbar{
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        .nav_btn{
+
+            i{
+                font-size: 30px;
+            }
+        }
+        @media (min-width:1024px) {
+            display: none;
+            
+        }
+    }
+    
+    }
+    .nav_items{
+        @media (min-width:1024px) {
+            display: none;
+        }
+        background-color: #fff;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+z-index: 9999;
+        width: 40%;
+        height: 100vh;
+        padding: 20px;
+        overflow: auto;
+        display: none;
+        #nav_close{
+            display: flex;
+            justify-content: right;
+            color: $orange-color;
+            font-size: 24px;
+        }
+        ul{
+           li{
+               list-style: none;
+               padding: 11px 0;
+               a{
+                   text-decoration: none;
+                   color: $gray-txtcolor;
+                   font-size: 12px;
+                   font-weight: 500;
+                   text-transform: uppercase;
+                   letter-spacing: .1em;
+                   padding: 11px 0;
+                   font-family: $font-Mont;
+                   position: relative;
+
+                   &hover{
+                    color: $orange-color;
+
+                   }
+               }
+               &:hover{
+                #list_hover{
+                    height: auto;
+
+                }
+               }
+               #list_hover{
+                transition: .5s ease-in-out;
+                width: 100%;
+                   height: 0 ;
+                   overflow: hidden !important;
+               }
+           }
+        }
+       }
+    .navbaractive{
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        right: 0;
+        transition: .5s ease-in-out;
+    }
+}
+
